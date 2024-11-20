@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Résultats des stations Vélib'</title>
+    <style>
+      /* Style global */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f7fc;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        padding-top: 50px;
+        font-size: 2rem;
+      }
+
+      /* Article contenant une station */
+      article {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      b {
+        color: #007bff;
+        font-size: 1.2rem;
+      }
+
+      .station-info {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Message d'erreur */
+      .error {
+        color: red;
+        font-size: 1.2rem;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      /* Retour à la recherche */
+      .back-button {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .back-button:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Résultats pour l'adresse : {{ address }}</h1>
+
+    {% if stations %} {% for station in stations %}
+    <article>
+      <h2>{{ station.name }}</h2>
+      <div class="station-info">
+        <p><strong>Distance :</strong> {{ station.distance }} km</p>
+        <p>
+          <strong>Vélos électriques disponibles :</strong> {{ station.ebike }}
+        </p>
+        <a
+          href="https://www.google.com/maps?q={{ station.lat }},{{ station.lon }}"
+          target="_blank"
+          >Voir sur Google Maps</a
+        >
+      </div>
+    </article>
+    {% endfor %} {% else %}
+    <div class="error">
+      Aucune station Vélib' trouvée à moins de 500 m avec des vélos électriques
+      disponibles.
+    </div>
+    {% endif %}
+
+    <a href="/" class="back-button">Retour à la recherche</a>
+  </body>
+</html>

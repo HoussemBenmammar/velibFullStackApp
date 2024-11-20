@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velib Locator</title>
+    <style>
+      /* Style global */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f7fc;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        padding-top: 50px;
+        font-size: 2rem;
+      }
+
+      /* Formulaire */
+      form {
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        font-size: 1.2rem;
+        color: #333;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Message d'erreur */
+      .error {
+        color: red;
+        font-size: 1rem;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rechercher des stations Vélib'</h1>
+    <form action="/search" method="POST">
+      <label for="address">Adresse :</label>
+      <input type="text" id="address" name="address" required />
+      <button type="submit">Rechercher</button>
+    </form>
+
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+  </body>
+</html>

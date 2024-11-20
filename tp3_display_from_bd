@@ -1,0 +1,40 @@
+import folium
+from pymongo import MongoClient
+import webbrowser
+
+# Connexion à MongoDB
+client = MongoClient('mongodb://localhost:27017/')
+db = client['tp1']
+collection = db['apiVelib']
+
+# Créer la carte centrée sur Paris
+m = folium.Map(location=[48.8566, 2.3522], tiles="OpenStreetMap", zoom_start=13)
+
+# Récupérer les données depuis MongoDB
+stations = collection.find()  # Vous pouvez ajouter un filtre ici si nécessaire
+
+# Ajouter les marqueurs sur la carte
+for station in stations:
+    # Récupérer les informations nécessaires depuis le document MongoDB
+    name = station.get('name', 'Unknown Station')
+    capacity = station.get('capacity', 0)
+    available_bikes = station.get('numbikesavailable', 0)
+    coords = station.get('coordonnees_geo', {'lat': 48.8566, 'lon': 2.3522})
+    lat, lon = coords.get('lat'), coords.get('lon')  # Extraire latitude et longitude
+
+    # Créer un texte pour le popup
+    popup_text = (
+        f"<b>{name}</b><br>"
+        f"Capacity: {capacity}<br>"
+        f"Bikes Available: {available_bikes}<br>"
+        f"E-bikes Available: {station.get('ebike', 0)}"
+    )
+
+    # Ajouter un marqueur sur la carte
+    folium.Marker([lat, lon], popup=popup_text).add_to(m)
+
+# Sauvegarder la carte dans un fichier HTML
+m.save("velib_map_mongo.html")
+
+# Ouvrir la carte dans le navigateur
+webbrowser.open("velib_map_mongo.html")

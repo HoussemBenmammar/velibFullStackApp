@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4bc7e4384a9ae7551c36bd2296d23660 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4bc7e4384a9ae7551c36bd2296d23660" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4bc7e4384a9ae7551c36bd2296d23660 = L.map(
+                "map_4bc7e4384a9ae7551c36bd2296d23660",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e09b65655e6d44d3a296438bfcf7c713 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e09b65655e6d44d3a296438bfcf7c713.addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+            var marker_c98287a96e6e3d0f6cc973cce832eeb9 = L.marker(
+                [48.87929591733507, 2.3373600840568547],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_620f3be6f63dc3c59b5448aefaaeb3af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_168505763f4b38701a837a16fc3828f5 = $(`<div id="html_168505763f4b38701a837a16fc3828f5" style="width: 100.0%; height: 100.0%;"><b>Toudouze - Clauzel</b><br>Capacity: 21<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_620f3be6f63dc3c59b5448aefaaeb3af.setContent(html_168505763f4b38701a837a16fc3828f5);
+            
+        
+
+        marker_c98287a96e6e3d0f6cc973cce832eeb9.bindPopup(popup_620f3be6f63dc3c59b5448aefaaeb3af)
+        ;
+
+        
+    
+    
+            var marker_c6a7c2d9946afdf75d4701674eadaa25 = L.marker(
+                [48.819428333369, 2.3433353751898],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_a47cc1e3c25c9a3a1f5a44d62fc941b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73cefd91a257140c5fcdbcf09a7ffef3 = $(`<div id="html_73cefd91a257140c5fcdbcf09a7ffef3" style="width: 100.0%; height: 100.0%;"><b>Jourdan - Stade Charléty</b><br>Capacity: 60<br>Bikes Available: 10<br>E-bikes Available: 7</div>`)[0];
+                popup_a47cc1e3c25c9a3a1f5a44d62fc941b7.setContent(html_73cefd91a257140c5fcdbcf09a7ffef3);
+            
+        
+
+        marker_c6a7c2d9946afdf75d4701674eadaa25.bindPopup(popup_a47cc1e3c25c9a3a1f5a44d62fc941b7)
+        ;
+
+        
+    
+    
+            var marker_4127ac62a23b2ec3939cd17035111d45 = L.marker(
+                [48.855907555969, 2.3925706744194],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_52db5d93dd69e4ae5b5169723fcc1a2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e42cd5dec684b14aeaf00192b871fc18 = $(`<div id="html_e42cd5dec684b14aeaf00192b871fc18" style="width: 100.0%; height: 100.0%;"><b>Charonne - Robert et Sonia Delaunay</b><br>Capacity: 20<br>Bikes Available: 2<br>E-bikes Available: 1</div>`)[0];
+                popup_52db5d93dd69e4ae5b5169723fcc1a2a.setContent(html_e42cd5dec684b14aeaf00192b871fc18);
+            
+        
+
+        marker_4127ac62a23b2ec3939cd17035111d45.bindPopup(popup_52db5d93dd69e4ae5b5169723fcc1a2a)
+        ;
+
+        
+    
+    
+            var marker_8746cd7da9e2a34617532ff550501f24 = L.marker(
+                [48.835092787824, 2.3534681351338],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_eaa8c4d1b1e55b0fc3d13f04e57b0a5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fd73c147fd1e9bd413a8ff5a51ff022 = $(`<div id="html_1fd73c147fd1e9bd413a8ff5a51ff022" style="width: 100.0%; height: 100.0%;"><b>Le Brun - Gobelins</b><br>Capacity: 48<br>Bikes Available: 6<br>E-bikes Available: 6</div>`)[0];
+                popup_eaa8c4d1b1e55b0fc3d13f04e57b0a5a.setContent(html_1fd73c147fd1e9bd413a8ff5a51ff022);
+            
+        
+
+        marker_8746cd7da9e2a34617532ff550501f24.bindPopup(popup_eaa8c4d1b1e55b0fc3d13f04e57b0a5a)
+        ;
+
+        
+    
+    
+            var marker_cebf14b63cd4cfcab22e6a636103cc84 = L.marker(
+                [48.848563233059, 2.3204218259346],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_ac165508115572ed583c555a92d7a6cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87e425aa5dc527d59d07de46615b79aa = $(`<div id="html_87e425aa5dc527d59d07de46615b79aa" style="width: 100.0%; height: 100.0%;"><b>Vaneau - Sèvres</b><br>Capacity: 35<br>Bikes Available: 10<br>E-bikes Available: 7</div>`)[0];
+                popup_ac165508115572ed583c555a92d7a6cf.setContent(html_87e425aa5dc527d59d07de46615b79aa);
+            
+        
+
+        marker_cebf14b63cd4cfcab22e6a636103cc84.bindPopup(popup_ac165508115572ed583c555a92d7a6cf)
+        ;
+
+        
+    
+    
+            var marker_7b234295286bb8db5f4d7cc6948baa4b = L.marker(
+                [48.84389286531899, 2.3519663885235786],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_caa44df10671556a6c249033b633a739 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ab46e6ad3135f136fd720a1d6a60cd7 = $(`<div id="html_6ab46e6ad3135f136fd720a1d6a60cd7" style="width: 100.0%; height: 100.0%;"><b>Lacépède - Monge</b><br>Capacity: 23<br>Bikes Available: 11<br>E-bikes Available: 4</div>`)[0];
+                popup_caa44df10671556a6c249033b633a739.setContent(html_6ab46e6ad3135f136fd720a1d6a60cd7);
+            
+        
+
+        marker_7b234295286bb8db5f4d7cc6948baa4b.bindPopup(popup_caa44df10671556a6c249033b633a739)
+        ;
+
+        
+    
+    
+            var marker_8c728516f5fcaf55c304561e1b4bab20 = L.marker(
+                [48.779035118572, 2.4609763908985],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_1400b4e964392c173f867e3d3598f0f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ab7d4ffa126e068dae3d57aeca4d929 = $(`<div id="html_1ab7d4ffa126e068dae3d57aeca4d929" style="width: 100.0%; height: 100.0%;"><b>Bas du Mont-Mesly</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_1400b4e964392c173f867e3d3598f0f9.setContent(html_1ab7d4ffa126e068dae3d57aeca4d929);
+            
+        
+
+        marker_8c728516f5fcaf55c304561e1b4bab20.bindPopup(popup_1400b4e964392c173f867e3d3598f0f9)
+        ;
+
+        
+    
+    
+            var marker_9a9880b108966889a05dce7bc0d50a93 = L.marker(
+                [48.908168131015, 2.4530601033354],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_99612aa97a37678b2d8a9300942d4a9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79da3e3be06b07c7a617de4bd2d47b79 = $(`<div id="html_79da3e3be06b07c7a617de4bd2d47b79" style="width: 100.0%; height: 100.0%;"><b>Jean Rostand - Paul Vaillant Couturier</b><br>Capacity: 40<br>Bikes Available: 14<br>E-bikes Available: 6</div>`)[0];
+                popup_99612aa97a37678b2d8a9300942d4a9e.setContent(html_79da3e3be06b07c7a617de4bd2d47b79);
+            
+        
+
+        marker_9a9880b108966889a05dce7bc0d50a93.bindPopup(popup_99612aa97a37678b2d8a9300942d4a9e)
+        ;
+
+        
+    
+    
+            var marker_0de7e7951a5f19a13efed63d46cd2a56 = L.marker(
+                [48.8570414504784, 2.37289470306807],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_3f415a4bb93c4ad86de180329e083e17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37dba5ce8be5d665aee019b2e65914c6 = $(`<div id="html_37dba5ce8be5d665aee019b2e65914c6" style="width: 100.0%; height: 100.0%;"><b>Froment - Bréguet</b><br>Capacity: 43<br>Bikes Available: 42<br>E-bikes Available: 14</div>`)[0];
+                popup_3f415a4bb93c4ad86de180329e083e17.setContent(html_37dba5ce8be5d665aee019b2e65914c6);
+            
+        
+
+        marker_0de7e7951a5f19a13efed63d46cd2a56.bindPopup(popup_3f415a4bb93c4ad86de180329e083e17)
+        ;
+
+        
+    
+    
+            var marker_95c7923b7e7dce0c7bb845e685cffaeb = L.marker(
+                [48.881973298352, 2.301132157445],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_41f1f761c36f886821eea692be3b88c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2aae021b1ac31c2a1cb8f9418e5dffb7 = $(`<div id="html_2aae021b1ac31c2a1cb8f9418e5dffb7" style="width: 100.0%; height: 100.0%;"><b>Jouffroy d'Abbans - Wagram</b><br>Capacity: 40<br>Bikes Available: 9<br>E-bikes Available: 7</div>`)[0];
+                popup_41f1f761c36f886821eea692be3b88c3.setContent(html_2aae021b1ac31c2a1cb8f9418e5dffb7);
+            
+        
+
+        marker_95c7923b7e7dce0c7bb845e685cffaeb.bindPopup(popup_41f1f761c36f886821eea692be3b88c3)
+        ;
+
+        
+    
+    
+            var marker_ded8f870659b16f6df8896be411b5d7e = L.marker(
+                [48.878370277021, 2.440523876268],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_70f483f04a7c616bdec00a75c24f6dd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a6e1a01f30d2875854ee704eb8b5687 = $(`<div id="html_0a6e1a01f30d2875854ee704eb8b5687" style="width: 100.0%; height: 100.0%;"><b>Charcot - Benfleet</b><br>Capacity: 28<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_70f483f04a7c616bdec00a75c24f6dd4.setContent(html_0a6e1a01f30d2875854ee704eb8b5687);
+            
+        
+
+        marker_ded8f870659b16f6df8896be411b5d7e.bindPopup(popup_70f483f04a7c616bdec00a75c24f6dd4)
+        ;
+
+        
+    
+    
+            var marker_36d255cca2a2e6e9f5257322030d43c8 = L.marker(
+                [48.856451985396, 2.3348518833518],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_29d710e9f065928a74bdf78f69e3546d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d2b0af945666010504ff373b98ad8e9 = $(`<div id="html_9d2b0af945666010504ff373b98ad8e9" style="width: 100.0%; height: 100.0%;"><b>Beaux-Arts - Bonaparte</b><br>Capacity: 20<br>Bikes Available: 17<br>E-bikes Available: 3</div>`)[0];
+                popup_29d710e9f065928a74bdf78f69e3546d.setContent(html_9d2b0af945666010504ff373b98ad8e9);
+            
+        
+
+        marker_36d255cca2a2e6e9f5257322030d43c8.bindPopup(popup_29d710e9f065928a74bdf78f69e3546d)
+        ;
+
+        
+    
+    
+            var marker_fc27b314debd8305b867e5ea1af88d52 = L.marker(
+                [48.840855311763, 2.3875549435616],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_0790aa10a9bc45ce193684d5689b949e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd4c60d9283fc58e54a6d3ba08daef22 = $(`<div id="html_dd4c60d9283fc58e54a6d3ba08daef22" style="width: 100.0%; height: 100.0%;"><b>Mairie du 12ème</b><br>Capacity: 30<br>Bikes Available: 8<br>E-bikes Available: 4</div>`)[0];
+                popup_0790aa10a9bc45ce193684d5689b949e.setContent(html_dd4c60d9283fc58e54a6d3ba08daef22);
+            
+        
+
+        marker_fc27b314debd8305b867e5ea1af88d52.bindPopup(popup_0790aa10a9bc45ce193684d5689b949e)
+        ;
+
+        
+    
+    
+            var marker_eda646b8432f8ed4ffea75099d0896f4 = L.marker(
+                [48.871417284355, 2.3076787590981],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_cb0e704394da02770eed855a0a8382ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57ef226d02d7fb7d75460fcec3d60fe4 = $(`<div id="html_57ef226d02d7fb7d75460fcec3d60fe4" style="width: 100.0%; height: 100.0%;"><b>Boétie - Ponthieu</b><br>Capacity: 45<br>Bikes Available: 41<br>E-bikes Available: 13</div>`)[0];
+                popup_cb0e704394da02770eed855a0a8382ce.setContent(html_57ef226d02d7fb7d75460fcec3d60fe4);
+            
+        
+
+        marker_eda646b8432f8ed4ffea75099d0896f4.bindPopup(popup_cb0e704394da02770eed855a0a8382ce)
+        ;
+
+        
+    
+    
+            var marker_3604d53fb4bd8b724df87e0819b0dc92 = L.marker(
+                [48.82234096593411, 2.327861653302471],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_e25ac7017b969cdbd6a0bb572135cd70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c2166406e353758191e4b29b4c0e295 = $(`<div id="html_0c2166406e353758191e4b29b4c0e295" style="width: 100.0%; height: 100.0%;"><b>Le Brix et Mesmin - Jourdan</b><br>Capacity: 21<br>Bikes Available: 2<br>E-bikes Available: 0</div>`)[0];
+                popup_e25ac7017b969cdbd6a0bb572135cd70.setContent(html_0c2166406e353758191e4b29b4c0e295);
+            
+        
+
+        marker_3604d53fb4bd8b724df87e0819b0dc92.bindPopup(popup_e25ac7017b969cdbd6a0bb572135cd70)
+        ;
+
+        
+    
+    
+            var marker_b4c14392cf7211d4fc3fd91361e15e01 = L.marker(
+                [48.768482147086, 2.4711590635627],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_c6d8d69d8403be4c540fad27ca06f70e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe9f5a3026e764112f1ca084c9148d3b = $(`<div id="html_fe9f5a3026e764112f1ca084c9148d3b" style="width: 100.0%; height: 100.0%;"><b>Sarrazins - Saussure</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_c6d8d69d8403be4c540fad27ca06f70e.setContent(html_fe9f5a3026e764112f1ca084c9148d3b);
+            
+        
+
+        marker_b4c14392cf7211d4fc3fd91361e15e01.bindPopup(popup_c6d8d69d8403be4c540fad27ca06f70e)
+        ;
+
+        
+    
+    
+            var marker_ec0a288fec5a32ed83664d000bb04677 = L.marker(
+                [48.870828911558, 2.3459213599563],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_d37b97039998052383692ffbb629fab3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0783fb056c34285ce71e0cd100ceb85 = $(`<div id="html_d0783fb056c34285ce71e0cd100ceb85" style="width: 100.0%; height: 100.0%;"><b>Saint-Fiacre - Poissonière</b><br>Capacity: 35<br>Bikes Available: 35<br>E-bikes Available: 8</div>`)[0];
+                popup_d37b97039998052383692ffbb629fab3.setContent(html_d0783fb056c34285ce71e0cd100ceb85);
+            
+        
+
+        marker_ec0a288fec5a32ed83664d000bb04677.bindPopup(popup_d37b97039998052383692ffbb629fab3)
+        ;
+
+        
+    
+    
+            var marker_52bdd392730b7f621039ce19765e7269 = L.marker(
+                [48.89594736851349, 2.381133802246315],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_37422c93e8b63622b5da8df123eb8b64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8d63f0c5cf51b9fb3a54b0951fe6781 = $(`<div id="html_f8d63f0c5cf51b9fb3a54b0951fe6781" style="width: 100.0%; height: 100.0%;"><b>Cambrai - Benjamin Constant</b><br>Capacity: 43<br>Bikes Available: 9<br>E-bikes Available: 1</div>`)[0];
+                popup_37422c93e8b63622b5da8df123eb8b64.setContent(html_f8d63f0c5cf51b9fb3a54b0951fe6781);
+            
+        
+
+        marker_52bdd392730b7f621039ce19765e7269.bindPopup(popup_37422c93e8b63622b5da8df123eb8b64)
+        ;
+
+        
+    
+    
+            var marker_dbe85b3f763e600c3c49d99e21bcc4b4 = L.marker(
+                [48.871031137596, 2.379056852114],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_bddf44f98ec4cc0601fa8aee2872a36a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05f9804d8742992d9dd366465770d32c = $(`<div id="html_05f9804d8742992d9dd366465770d32c" style="width: 100.0%; height: 100.0%;"><b>Ramponeau - Belleville</b><br>Capacity: 44<br>Bikes Available: 4<br>E-bikes Available: 3</div>`)[0];
+                popup_bddf44f98ec4cc0601fa8aee2872a36a.setContent(html_05f9804d8742992d9dd366465770d32c);
+            
+        
+
+        marker_dbe85b3f763e600c3c49d99e21bcc4b4.bindPopup(popup_bddf44f98ec4cc0601fa8aee2872a36a)
+        ;
+
+        
+    
+    
+            var marker_f8f0dd52ea5c99ddc221e6484fd79130 = L.marker(
+                [48.81807418981508, 2.3267009854316716],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_5a1cee50553b2cb22f14f5bfdc3d4305 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5e60928cd28cc63cafc63545a525e10 = $(`<div id="html_c5e60928cd28cc63cafc63545a525e10" style="width: 100.0%; height: 100.0%;"><b>Louis Lejeune - Barbès</b><br>Capacity: 25<br>Bikes Available: 11<br>E-bikes Available: 3</div>`)[0];
+                popup_5a1cee50553b2cb22f14f5bfdc3d4305.setContent(html_c5e60928cd28cc63cafc63545a525e10);
+            
+        
+
+        marker_f8f0dd52ea5c99ddc221e6484fd79130.bindPopup(popup_5a1cee50553b2cb22f14f5bfdc3d4305)
+        ;
+
+        
+    
+    
+            var marker_25eea60fc42fc99b87f21758a919aa9e = L.marker(
+                [48.87929591733507, 2.3373600840568547],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_88fc8d4915e951ead2f57022fb1d181a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74292dc99611ae3f221d21144150247d = $(`<div id="html_74292dc99611ae3f221d21144150247d" style="width: 100.0%; height: 100.0%;"><b>Toudouze - Clauzel</b><br>Capacity: 21<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_88fc8d4915e951ead2f57022fb1d181a.setContent(html_74292dc99611ae3f221d21144150247d);
+            
+        
+
+        marker_25eea60fc42fc99b87f21758a919aa9e.bindPopup(popup_88fc8d4915e951ead2f57022fb1d181a)
+        ;
+
+        
+    
+    
+            var marker_ae164ef7403364ebf7e0ce618ec0dda6 = L.marker(
+                [48.855907555969, 2.3925706744194],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_cd43530df1b059232a6797cd800068fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4646fb9fd41655bea876a75ed25ece05 = $(`<div id="html_4646fb9fd41655bea876a75ed25ece05" style="width: 100.0%; height: 100.0%;"><b>Charonne - Robert et Sonia Delaunay</b><br>Capacity: 20<br>Bikes Available: 2<br>E-bikes Available: 0</div>`)[0];
+                popup_cd43530df1b059232a6797cd800068fd.setContent(html_4646fb9fd41655bea876a75ed25ece05);
+            
+        
+
+        marker_ae164ef7403364ebf7e0ce618ec0dda6.bindPopup(popup_cd43530df1b059232a6797cd800068fd)
+        ;
+
+        
+    
+    
+            var marker_9c23130d303896213d5283b1b1b9177a = L.marker(
+                [48.875448033960744, 2.315508019010038],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_564f69183a81b56a8f516c77ebd34df8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d101c8772dec2619c0a393c1b6af4ab8 = $(`<div id="html_d101c8772dec2619c0a393c1b6af4ab8" style="width: 100.0%; height: 100.0%;"><b>Messine - Place Du Pérou</b><br>Capacity: 12<br>Bikes Available: 9<br>E-bikes Available: 2</div>`)[0];
+                popup_564f69183a81b56a8f516c77ebd34df8.setContent(html_d101c8772dec2619c0a393c1b6af4ab8);
+            
+        
+
+        marker_9c23130d303896213d5283b1b1b9177a.bindPopup(popup_564f69183a81b56a8f516c77ebd34df8)
+        ;
+
+        
+    
+    
+            var marker_68a60dba3cfd744a3d6c771a35cae12e = L.marker(
+                [48.835092787824, 2.3534681351338],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_47d8dac2e735fb0bd4e9d56e0cb75239 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91b4bf58186534aa796a1eee9c5d6a13 = $(`<div id="html_91b4bf58186534aa796a1eee9c5d6a13" style="width: 100.0%; height: 100.0%;"><b>Le Brun - Gobelins</b><br>Capacity: 48<br>Bikes Available: 6<br>E-bikes Available: 6</div>`)[0];
+                popup_47d8dac2e735fb0bd4e9d56e0cb75239.setContent(html_91b4bf58186534aa796a1eee9c5d6a13);
+            
+        
+
+        marker_68a60dba3cfd744a3d6c771a35cae12e.bindPopup(popup_47d8dac2e735fb0bd4e9d56e0cb75239)
+        ;
+
+        
+    
+    
+            var marker_d108da8cb7ac279ca7385e8aff1a6171 = L.marker(
+                [48.848563233059, 2.3204218259346],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_828004260769df5b2145217ce3d257a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9473dc63db696dd37d0dd3c6f90aff49 = $(`<div id="html_9473dc63db696dd37d0dd3c6f90aff49" style="width: 100.0%; height: 100.0%;"><b>Vaneau - Sèvres</b><br>Capacity: 35<br>Bikes Available: 8<br>E-bikes Available: 7</div>`)[0];
+                popup_828004260769df5b2145217ce3d257a2.setContent(html_9473dc63db696dd37d0dd3c6f90aff49);
+            
+        
+
+        marker_d108da8cb7ac279ca7385e8aff1a6171.bindPopup(popup_828004260769df5b2145217ce3d257a2)
+        ;
+
+        
+    
+    
+            var marker_dd5a7fca570c50c0344658e6760850de = L.marker(
+                [48.84389286531899, 2.3519663885235786],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_879803b1d396fd9e9f1aaf87fad272c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7625a96f3fc2647c52ce2204b293bbb6 = $(`<div id="html_7625a96f3fc2647c52ce2204b293bbb6" style="width: 100.0%; height: 100.0%;"><b>Lacépède - Monge</b><br>Capacity: 23<br>Bikes Available: 8<br>E-bikes Available: 2</div>`)[0];
+                popup_879803b1d396fd9e9f1aaf87fad272c8.setContent(html_7625a96f3fc2647c52ce2204b293bbb6);
+            
+        
+
+        marker_dd5a7fca570c50c0344658e6760850de.bindPopup(popup_879803b1d396fd9e9f1aaf87fad272c8)
+        ;
+
+        
+    
+    
+            var marker_1c767e3fc4e7df5f9ca272c0fb4b8b09 = L.marker(
+                [48.91039875761846, 2.3851355910301213],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b020cd0d7bc3f9fb6658faa00b44b102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d075451c4d1ea4f08a83dba331e93c3 = $(`<div id="html_2d075451c4d1ea4f08a83dba331e93c3" style="width: 100.0%; height: 100.0%;"><b>André Karman - République</b><br>Capacity: 31<br>Bikes Available: 5<br>E-bikes Available: 3</div>`)[0];
+                popup_b020cd0d7bc3f9fb6658faa00b44b102.setContent(html_2d075451c4d1ea4f08a83dba331e93c3);
+            
+        
+
+        marker_1c767e3fc4e7df5f9ca272c0fb4b8b09.bindPopup(popup_b020cd0d7bc3f9fb6658faa00b44b102)
+        ;
+
+        
+    
+    
+            var marker_f60974bd58c6065b9cfc0ad59c0248dd = L.marker(
+                [48.779035118572, 2.4609763908985],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_7e5c68a17da2998bccec3390b92853f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e573d5825048b74c6b91409801be7136 = $(`<div id="html_e573d5825048b74c6b91409801be7136" style="width: 100.0%; height: 100.0%;"><b>Bas du Mont-Mesly</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_7e5c68a17da2998bccec3390b92853f6.setContent(html_e573d5825048b74c6b91409801be7136);
+            
+        
+
+        marker_f60974bd58c6065b9cfc0ad59c0248dd.bindPopup(popup_7e5c68a17da2998bccec3390b92853f6)
+        ;
+
+        
+    
+    
+            var marker_e4983e2b7d5822975e2b6b245b8b651d = L.marker(
+                [48.835583838706, 2.2325500845909],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_673594173b760c50594a0f151703aec7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6996089eb1c08ac048858d51523ca15 = $(`<div id="html_a6996089eb1c08ac048858d51523ca15" style="width: 100.0%; height: 100.0%;"><b>Silly - Galliéni</b><br>Capacity: 25<br>Bikes Available: 5<br>E-bikes Available: 1</div>`)[0];
+                popup_673594173b760c50594a0f151703aec7.setContent(html_a6996089eb1c08ac048858d51523ca15);
+            
+        
+
+        marker_e4983e2b7d5822975e2b6b245b8b651d.bindPopup(popup_673594173b760c50594a0f151703aec7)
+        ;
+
+        
+    
+    
+            var marker_9d903fdbb2405999b14e556da93fc18a = L.marker(
+                [48.84504716661511, 2.3494647851273465],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_184af9140d33bbd5249745c8adb45d4d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aea4bf207235ffa0e755d3ed2b817b9b = $(`<div id="html_aea4bf207235ffa0e755d3ed2b817b9b" style="width: 100.0%; height: 100.0%;"><b>Thouin - Cardinal Lemoine</b><br>Capacity: 17<br>Bikes Available: 10<br>E-bikes Available: 7</div>`)[0];
+                popup_184af9140d33bbd5249745c8adb45d4d.setContent(html_aea4bf207235ffa0e755d3ed2b817b9b);
+            
+        
+
+        marker_9d903fdbb2405999b14e556da93fc18a.bindPopup(popup_184af9140d33bbd5249745c8adb45d4d)
+        ;
+
+        
+    
+    
+            var marker_d347ed0f86c3dbea7d81737d13296c0e = L.marker(
+                [48.8570414504784, 2.37289470306807],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_03309c887071fecd6e4339d14b620d3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf4b28fbc5f25c689c5fd90c98c84b8b = $(`<div id="html_bf4b28fbc5f25c689c5fd90c98c84b8b" style="width: 100.0%; height: 100.0%;"><b>Froment - Bréguet</b><br>Capacity: 43<br>Bikes Available: 41<br>E-bikes Available: 14</div>`)[0];
+                popup_03309c887071fecd6e4339d14b620d3b.setContent(html_bf4b28fbc5f25c689c5fd90c98c84b8b);
+            
+        
+
+        marker_d347ed0f86c3dbea7d81737d13296c0e.bindPopup(popup_03309c887071fecd6e4339d14b620d3b)
+        ;
+
+        
+    
+    
+            var marker_5b273086e1004e095e47e5fe9050ce3c = L.marker(
+                [48.83310149953933, 2.299380004405976],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_ff1d95c7e9cde2699a83e7426375c8a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8945bf9058a951e380a6c891d99de9a = $(`<div id="html_b8945bf9058a951e380a6c891d99de9a" style="width: 100.0%; height: 100.0%;"><b>Morillons - Dantzig</b><br>Capacity: 52<br>Bikes Available: 6<br>E-bikes Available: 4</div>`)[0];
+                popup_ff1d95c7e9cde2699a83e7426375c8a4.setContent(html_b8945bf9058a951e380a6c891d99de9a);
+            
+        
+
+        marker_5b273086e1004e095e47e5fe9050ce3c.bindPopup(popup_ff1d95c7e9cde2699a83e7426375c8a4)
+        ;
+
+        
+    
+    
+            var marker_75b16ff7c75758248ded5cb18c91e6dd = L.marker(
+                [48.881973298352, 2.301132157445],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_bdad5a5acc1af69f736085fd1d0d737b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b19871e0d6508a94ecd876d7de9a3e07 = $(`<div id="html_b19871e0d6508a94ecd876d7de9a3e07" style="width: 100.0%; height: 100.0%;"><b>Jouffroy d'Abbans - Wagram</b><br>Capacity: 40<br>Bikes Available: 9<br>E-bikes Available: 6</div>`)[0];
+                popup_bdad5a5acc1af69f736085fd1d0d737b.setContent(html_b19871e0d6508a94ecd876d7de9a3e07);
+            
+        
+
+        marker_75b16ff7c75758248ded5cb18c91e6dd.bindPopup(popup_bdad5a5acc1af69f736085fd1d0d737b)
+        ;
+
+        
+    
+    
+            var marker_acc5282f93eb762956ff1aedfeaef48a = L.marker(
+                [48.878370277021, 2.440523876268],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_53afb3147b73a9d63064e2b83cd0f748 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c1efba879223c4c86c92e781024b00f = $(`<div id="html_5c1efba879223c4c86c92e781024b00f" style="width: 100.0%; height: 100.0%;"><b>Charcot - Benfleet</b><br>Capacity: 28<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_53afb3147b73a9d63064e2b83cd0f748.setContent(html_5c1efba879223c4c86c92e781024b00f);
+            
+        
+
+        marker_acc5282f93eb762956ff1aedfeaef48a.bindPopup(popup_53afb3147b73a9d63064e2b83cd0f748)
+        ;
+
+        
+    
+    
+            var marker_80798002dc064bcb41444d3955343811 = L.marker(
+                [48.856451985396, 2.3348518833518],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_064e5ab79d95b1a41d1fb93d339c4826 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a467cdc25028773a7a353a0d27215e2 = $(`<div id="html_2a467cdc25028773a7a353a0d27215e2" style="width: 100.0%; height: 100.0%;"><b>Beaux-Arts - Bonaparte</b><br>Capacity: 20<br>Bikes Available: 16<br>E-bikes Available: 2</div>`)[0];
+                popup_064e5ab79d95b1a41d1fb93d339c4826.setContent(html_2a467cdc25028773a7a353a0d27215e2);
+            
+        
+
+        marker_80798002dc064bcb41444d3955343811.bindPopup(popup_064e5ab79d95b1a41d1fb93d339c4826)
+        ;
+
+        
+    
+    
+            var marker_f0d1069c6b4bfa83f0cbe02bfaa4e8c4 = L.marker(
+                [48.82234096593411, 2.327861653302471],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_6099eaf23d4ca3b8b1801bd444ccd4e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39433225bbb69b2f66f51182fd234fc6 = $(`<div id="html_39433225bbb69b2f66f51182fd234fc6" style="width: 100.0%; height: 100.0%;"><b>Le Brix et Mesmin - Jourdan</b><br>Capacity: 21<br>Bikes Available: 2<br>E-bikes Available: 0</div>`)[0];
+                popup_6099eaf23d4ca3b8b1801bd444ccd4e7.setContent(html_39433225bbb69b2f66f51182fd234fc6);
+            
+        
+
+        marker_f0d1069c6b4bfa83f0cbe02bfaa4e8c4.bindPopup(popup_6099eaf23d4ca3b8b1801bd444ccd4e7)
+        ;
+
+        
+    
+    
+            var marker_83e2f80f4e9a39208bb3f47e34c128a9 = L.marker(
+                [48.86785, 2.446748],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_597632c36c45ba0ed9495b2aa8c1d0da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d21159ad516f93c2d6427c7dbd776163 = $(`<div id="html_d21159ad516f93c2d6427c7dbd776163" style="width: 100.0%; height: 100.0%;"><b>Romainville - Vaillant-Couturier</b><br>Capacity: 38<br>Bikes Available: 3<br>E-bikes Available: 3</div>`)[0];
+                popup_597632c36c45ba0ed9495b2aa8c1d0da.setContent(html_d21159ad516f93c2d6427c7dbd776163);
+            
+        
+
+        marker_83e2f80f4e9a39208bb3f47e34c128a9.bindPopup(popup_597632c36c45ba0ed9495b2aa8c1d0da)
+        ;
+
+        
+    
+    
+            var marker_8e9da7b362e0bb52cb491347ce6cf535 = L.marker(
+                [48.768482147086, 2.4711590635627],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b23131d5745a649b32352ace9381b690 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8911c641dd13333def474b5468045650 = $(`<div id="html_8911c641dd13333def474b5468045650" style="width: 100.0%; height: 100.0%;"><b>Sarrazins - Saussure</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_b23131d5745a649b32352ace9381b690.setContent(html_8911c641dd13333def474b5468045650);
+            
+        
+
+        marker_8e9da7b362e0bb52cb491347ce6cf535.bindPopup(popup_b23131d5745a649b32352ace9381b690)
+        ;
+
+        
+    
+    
+            var marker_82bc03aea7435958a002c3580e54afd8 = L.marker(
+                [48.870828911558, 2.3459213599563],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_f367dce11e2da050dc70855ecf66b024 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_840c3a7f93e42be31fe86ad7376160ce = $(`<div id="html_840c3a7f93e42be31fe86ad7376160ce" style="width: 100.0%; height: 100.0%;"><b>Saint-Fiacre - Poissonière</b><br>Capacity: 35<br>Bikes Available: 35<br>E-bikes Available: 8</div>`)[0];
+                popup_f367dce11e2da050dc70855ecf66b024.setContent(html_840c3a7f93e42be31fe86ad7376160ce);
+            
+        
+
+        marker_82bc03aea7435958a002c3580e54afd8.bindPopup(popup_f367dce11e2da050dc70855ecf66b024)
+        ;
+
+        
+    
+    
+            var marker_3918bad68fd3321e4eaf1c3e49c1c097 = L.marker(
+                [48.89792240854517, 2.32851451022192],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_92f5d3b68a7ec6b04d75d4f8b67d21bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca599068cd0786746732febab75957f2 = $(`<div id="html_ca599068cd0786746732febab75957f2" style="width: 100.0%; height: 100.0%;"><b>Porte de Saint-Ouen - Bessières</b><br>Capacity: 42<br>Bikes Available: 2<br>E-bikes Available: 1</div>`)[0];
+                popup_92f5d3b68a7ec6b04d75d4f8b67d21bf.setContent(html_ca599068cd0786746732febab75957f2);
+            
+        
+
+        marker_3918bad68fd3321e4eaf1c3e49c1c097.bindPopup(popup_92f5d3b68a7ec6b04d75d4f8b67d21bf)
+        ;
+
+        
+    
+    
+            var marker_b213bcc5133813fc4ed25c2f86ad7a50 = L.marker(
+                [48.855907555969, 2.3925706744194],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_16661e344b3783aad0d75b1f615f0819 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71c57209e532299f584bb3d5c952d69b = $(`<div id="html_71c57209e532299f584bb3d5c952d69b" style="width: 100.0%; height: 100.0%;"><b>Charonne - Robert et Sonia Delaunay</b><br>Capacity: 20<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_16661e344b3783aad0d75b1f615f0819.setContent(html_71c57209e532299f584bb3d5c952d69b);
+            
+        
+
+        marker_b213bcc5133813fc4ed25c2f86ad7a50.bindPopup(popup_16661e344b3783aad0d75b1f615f0819)
+        ;
+
+        
+    
+    
+            var marker_a525aa60fd2f58ff393615f1bb04e664 = L.marker(
+                [48.835092787824, 2.3534681351338],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_239abd383ffb0df0509bcfd849548561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c95d57f5fb10bad6baa73ad7f723c03d = $(`<div id="html_c95d57f5fb10bad6baa73ad7f723c03d" style="width: 100.0%; height: 100.0%;"><b>Le Brun - Gobelins</b><br>Capacity: 48<br>Bikes Available: 4<br>E-bikes Available: 4</div>`)[0];
+                popup_239abd383ffb0df0509bcfd849548561.setContent(html_c95d57f5fb10bad6baa73ad7f723c03d);
+            
+        
+
+        marker_a525aa60fd2f58ff393615f1bb04e664.bindPopup(popup_239abd383ffb0df0509bcfd849548561)
+        ;
+
+        
+    
+    
+            var marker_e68b4ac319d476e616596e0a96c68143 = L.marker(
+                [48.848563233059, 2.3204218259346],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_986f35f10149b8078331387840d4ef4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d9d3dd182ab256d09265296edc3fcca = $(`<div id="html_3d9d3dd182ab256d09265296edc3fcca" style="width: 100.0%; height: 100.0%;"><b>Vaneau - Sèvres</b><br>Capacity: 35<br>Bikes Available: 8<br>E-bikes Available: 7</div>`)[0];
+                popup_986f35f10149b8078331387840d4ef4e.setContent(html_3d9d3dd182ab256d09265296edc3fcca);
+            
+        
+
+        marker_e68b4ac319d476e616596e0a96c68143.bindPopup(popup_986f35f10149b8078331387840d4ef4e)
+        ;
+
+        
+    
+    
+            var marker_040dbb3c734b28f9f78efcde6f7039de = L.marker(
+                [48.84389286531899, 2.3519663885235786],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_118f72f4c6d58c6d9073de55c962a480 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5c771f067c1b69ee9e54567df934394 = $(`<div id="html_e5c771f067c1b69ee9e54567df934394" style="width: 100.0%; height: 100.0%;"><b>Lacépède - Monge</b><br>Capacity: 23<br>Bikes Available: 8<br>E-bikes Available: 2</div>`)[0];
+                popup_118f72f4c6d58c6d9073de55c962a480.setContent(html_e5c771f067c1b69ee9e54567df934394);
+            
+        
+
+        marker_040dbb3c734b28f9f78efcde6f7039de.bindPopup(popup_118f72f4c6d58c6d9073de55c962a480)
+        ;
+
+        
+    
+    
+            var marker_8b6712b7d551899aa6640c850ddd504f = L.marker(
+                [48.81580226360801, 2.376804985105991],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_97007576d0ef036f04cb9241903fbecb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f74d76fa044f50a7e34e38639ffb4c0 = $(`<div id="html_6f74d76fa044f50a7e34e38639ffb4c0" style="width: 100.0%; height: 100.0%;"><b>Pierre et Marie Curie - Maurice Thorez</b><br>Capacity: 27<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_97007576d0ef036f04cb9241903fbecb.setContent(html_6f74d76fa044f50a7e34e38639ffb4c0);
+            
+        
+
+        marker_8b6712b7d551899aa6640c850ddd504f.bindPopup(popup_97007576d0ef036f04cb9241903fbecb)
+        ;
+
+        
+    
+    
+            var marker_bdc9f835136344c87ca8db974525584c = L.marker(
+                [48.779035118572, 2.4609763908985],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_8c3ec00388598f1cf7eee582ebd1c12c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b808aee405908a6e2867edda3acc03ca = $(`<div id="html_b808aee405908a6e2867edda3acc03ca" style="width: 100.0%; height: 100.0%;"><b>Bas du Mont-Mesly</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_8c3ec00388598f1cf7eee582ebd1c12c.setContent(html_b808aee405908a6e2867edda3acc03ca);
+            
+        
+
+        marker_bdc9f835136344c87ca8db974525584c.bindPopup(popup_8c3ec00388598f1cf7eee582ebd1c12c)
+        ;
+
+        
+    
+    
+            var marker_a7cbf3afaf758b9c53f3fdf4ebae135d = L.marker(
+                [48.835583838706, 2.2325500845909],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_356b188da1be23078155e05ca84fc7ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc3419cc276ad39020230f2826eabe6f = $(`<div id="html_bc3419cc276ad39020230f2826eabe6f" style="width: 100.0%; height: 100.0%;"><b>Silly - Galliéni</b><br>Capacity: 25<br>Bikes Available: 4<br>E-bikes Available: 1</div>`)[0];
+                popup_356b188da1be23078155e05ca84fc7ee.setContent(html_bc3419cc276ad39020230f2826eabe6f);
+            
+        
+
+        marker_a7cbf3afaf758b9c53f3fdf4ebae135d.bindPopup(popup_356b188da1be23078155e05ca84fc7ee)
+        ;
+
+        
+    
+    
+            var marker_6fd178c16f9189c81a1f500b1576db25 = L.marker(
+                [48.851296433665276, 2.325061820447445],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_5cac7a4fa7f608309cb1c5000e3a6b7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_babf13c6040c84cc517dc435cc88b3f3 = $(`<div id="html_babf13c6040c84cc517dc435cc88b3f3" style="width: 100.0%; height: 100.0%;"><b>Square Boucicaut</b><br>Capacity: 60<br>Bikes Available: 52<br>E-bikes Available: 25</div>`)[0];
+                popup_5cac7a4fa7f608309cb1c5000e3a6b7b.setContent(html_babf13c6040c84cc517dc435cc88b3f3);
+            
+        
+
+        marker_6fd178c16f9189c81a1f500b1576db25.bindPopup(popup_5cac7a4fa7f608309cb1c5000e3a6b7b)
+        ;
+
+        
+    
+    
+            var marker_1d8ccad2db5126d5de26caadf9c2b2aa = L.marker(
+                [48.84504716661511, 2.3494647851273465],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_75f1f3e2ed1200e592ab3c6f8fee5032 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_582091957cb4603fc95277a74c65cf40 = $(`<div id="html_582091957cb4603fc95277a74c65cf40" style="width: 100.0%; height: 100.0%;"><b>Thouin - Cardinal Lemoine</b><br>Capacity: 17<br>Bikes Available: 8<br>E-bikes Available: 4</div>`)[0];
+                popup_75f1f3e2ed1200e592ab3c6f8fee5032.setContent(html_582091957cb4603fc95277a74c65cf40);
+            
+        
+
+        marker_1d8ccad2db5126d5de26caadf9c2b2aa.bindPopup(popup_75f1f3e2ed1200e592ab3c6f8fee5032)
+        ;
+
+        
+    
+    
+            var marker_462e6d648f443af4ad00f0a0b0a08c32 = L.marker(
+                [48.878370277021, 2.440523876268],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_210c543ff7c8f65eb65d4c231b358ca3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97daa543fad93f2eb76d41ed171aa2bd = $(`<div id="html_97daa543fad93f2eb76d41ed171aa2bd" style="width: 100.0%; height: 100.0%;"><b>Charcot - Benfleet</b><br>Capacity: 28<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_210c543ff7c8f65eb65d4c231b358ca3.setContent(html_97daa543fad93f2eb76d41ed171aa2bd);
+            
+        
+
+        marker_462e6d648f443af4ad00f0a0b0a08c32.bindPopup(popup_210c543ff7c8f65eb65d4c231b358ca3)
+        ;
+
+        
+    
+    
+            var marker_000aed2fa634fadb2f072ad669bde199 = L.marker(
+                [48.82234096593411, 2.327861653302471],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_faed2fc7b6bcac8f805ebb66f99410d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c818d52849d163a473ee8f64ffac6b7a = $(`<div id="html_c818d52849d163a473ee8f64ffac6b7a" style="width: 100.0%; height: 100.0%;"><b>Le Brix et Mesmin - Jourdan</b><br>Capacity: 21<br>Bikes Available: 2<br>E-bikes Available: 0</div>`)[0];
+                popup_faed2fc7b6bcac8f805ebb66f99410d1.setContent(html_c818d52849d163a473ee8f64ffac6b7a);
+            
+        
+
+        marker_000aed2fa634fadb2f072ad669bde199.bindPopup(popup_faed2fc7b6bcac8f805ebb66f99410d1)
+        ;
+
+        
+    
+    
+            var marker_6b1f5231e13a91a49eaec1efc175590b = L.marker(
+                [48.86785, 2.446748],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_bc3a2b9e351e63d6a4c3a820bf0dc7ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_119fb8530f1b082f82b6e842c137cb00 = $(`<div id="html_119fb8530f1b082f82b6e842c137cb00" style="width: 100.0%; height: 100.0%;"><b>Romainville - Vaillant-Couturier</b><br>Capacity: 38<br>Bikes Available: 3<br>E-bikes Available: 3</div>`)[0];
+                popup_bc3a2b9e351e63d6a4c3a820bf0dc7ca.setContent(html_119fb8530f1b082f82b6e842c137cb00);
+            
+        
+
+        marker_6b1f5231e13a91a49eaec1efc175590b.bindPopup(popup_bc3a2b9e351e63d6a4c3a820bf0dc7ca)
+        ;
+
+        
+    
+    
+            var marker_8bc12af84e9e8b4504575663435d5971 = L.marker(
+                [48.768482147086, 2.4711590635627],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_2646ec1bb7857d6752d2c9a201e49696 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_230975ab297f204fd93de4959d2103aa = $(`<div id="html_230975ab297f204fd93de4959d2103aa" style="width: 100.0%; height: 100.0%;"><b>Sarrazins - Saussure</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_2646ec1bb7857d6752d2c9a201e49696.setContent(html_230975ab297f204fd93de4959d2103aa);
+            
+        
+
+        marker_8bc12af84e9e8b4504575663435d5971.bindPopup(popup_2646ec1bb7857d6752d2c9a201e49696)
+        ;
+
+        
+    
+    
+            var marker_f99139596581d27b6790aa80814e0cb1 = L.marker(
+                [48.870828911558, 2.3459213599563],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_2a6f8dba926149ae4a84bcd4083d1725 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_840be28c4faa76be5547e1383b5ca658 = $(`<div id="html_840be28c4faa76be5547e1383b5ca658" style="width: 100.0%; height: 100.0%;"><b>Saint-Fiacre - Poissonière</b><br>Capacity: 35<br>Bikes Available: 34<br>E-bikes Available: 8</div>`)[0];
+                popup_2a6f8dba926149ae4a84bcd4083d1725.setContent(html_840be28c4faa76be5547e1383b5ca658);
+            
+        
+
+        marker_f99139596581d27b6790aa80814e0cb1.bindPopup(popup_2a6f8dba926149ae4a84bcd4083d1725)
+        ;
+
+        
+    
+    
+            var marker_98b9e39a3d75cf2a8b176115976e2cd1 = L.marker(
+                [48.89792240854517, 2.32851451022192],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_fee2edaacb4dc1fae5b539e209c31814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3281333e8a237929d73d8e5570b9985a = $(`<div id="html_3281333e8a237929d73d8e5570b9985a" style="width: 100.0%; height: 100.0%;"><b>Porte de Saint-Ouen - Bessières</b><br>Capacity: 42<br>Bikes Available: 2<br>E-bikes Available: 1</div>`)[0];
+                popup_fee2edaacb4dc1fae5b539e209c31814.setContent(html_3281333e8a237929d73d8e5570b9985a);
+            
+        
+
+        marker_98b9e39a3d75cf2a8b176115976e2cd1.bindPopup(popup_fee2edaacb4dc1fae5b539e209c31814)
+        ;
+
+        
+    
+    
+            var marker_43b63c8d8f7f73d69cc0327826444174 = L.marker(
+                [48.89594736851349, 2.381133802246315],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b49748434b066003cff181e9a71678ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6e4317cbe695b905a2c36d43dcc95d6 = $(`<div id="html_b6e4317cbe695b905a2c36d43dcc95d6" style="width: 100.0%; height: 100.0%;"><b>Cambrai - Benjamin Constant</b><br>Capacity: 43<br>Bikes Available: 9<br>E-bikes Available: 1</div>`)[0];
+                popup_b49748434b066003cff181e9a71678ee.setContent(html_b6e4317cbe695b905a2c36d43dcc95d6);
+            
+        
+
+        marker_43b63c8d8f7f73d69cc0327826444174.bindPopup(popup_b49748434b066003cff181e9a71678ee)
+        ;
+
+        
+    
+    
+            var marker_d5aa2f51431ae32a6fad4106b2af2b8f = L.marker(
+                [48.84884147189881, 2.426325418925233],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_bf4357a8eb002f748b2b3d500df8e015 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27287a3e92c8e8742db7f97869745dc6 = $(`<div id="html_27287a3e92c8e8742db7f97869745dc6" style="width: 100.0%; height: 100.0%;"><b>Lagny - Victor Basch</b><br>Capacity: 26<br>Bikes Available: 5<br>E-bikes Available: 3</div>`)[0];
+                popup_bf4357a8eb002f748b2b3d500df8e015.setContent(html_27287a3e92c8e8742db7f97869745dc6);
+            
+        
+
+        marker_d5aa2f51431ae32a6fad4106b2af2b8f.bindPopup(popup_bf4357a8eb002f748b2b3d500df8e015)
+        ;
+
+        
+    
+    
+            var marker_a5747502f8bcf9eceea65fe12887af67 = L.marker(
+                [48.85772148887421, 2.2549109905958176],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_f2d41abbf3a8fd2302164a2b7fc76f64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74bf49d0faf3966f4ead73d9ed06b907 = $(`<div id="html_74bf49d0faf3966f4ead73d9ed06b907" style="width: 100.0%; height: 100.0%;"><b>Saint-Cloud - Hippodrome</b><br>Capacity: 30<br>Bikes Available: 14<br>E-bikes Available: 10</div>`)[0];
+                popup_f2d41abbf3a8fd2302164a2b7fc76f64.setContent(html_74bf49d0faf3966f4ead73d9ed06b907);
+            
+        
+
+        marker_a5747502f8bcf9eceea65fe12887af67.bindPopup(popup_f2d41abbf3a8fd2302164a2b7fc76f64)
+        ;
+
+        
+    
+    
+            var marker_90f96c2f2338abf3548eb212286692a8 = L.marker(
+                [48.81807418981508, 2.3267009854316716],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_d07170cbd568af1db082584d8723ff79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_987f41c09332f148074aa75ae283c0d1 = $(`<div id="html_987f41c09332f148074aa75ae283c0d1" style="width: 100.0%; height: 100.0%;"><b>Louis Lejeune - Barbès</b><br>Capacity: 25<br>Bikes Available: 8<br>E-bikes Available: 1</div>`)[0];
+                popup_d07170cbd568af1db082584d8723ff79.setContent(html_987f41c09332f148074aa75ae283c0d1);
+            
+        
+
+        marker_90f96c2f2338abf3548eb212286692a8.bindPopup(popup_d07170cbd568af1db082584d8723ff79)
+        ;
+
+        
+    
+    
+            var marker_a5ff74aa55259e70ea0148ebefe40790 = L.marker(
+                [48.83823094269141, 2.270506024360657],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_4bec30ec9015ebe4b437b9e7f930d83e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58f35f214b39c1a1172d0f02a81361d8 = $(`<div id="html_58f35f214b39c1a1172d0f02a81361d8" style="width: 100.0%; height: 100.0%;"><b>Général Martial Valin - Pont du Garigliano</b><br>Capacity: 16<br>Bikes Available: 8<br>E-bikes Available: 1</div>`)[0];
+                popup_4bec30ec9015ebe4b437b9e7f930d83e.setContent(html_58f35f214b39c1a1172d0f02a81361d8);
+            
+        
+
+        marker_a5ff74aa55259e70ea0148ebefe40790.bindPopup(popup_4bec30ec9015ebe4b437b9e7f930d83e)
+        ;
+
+        
+    
+    
+            var marker_a3e4e15329d17b457940c9027f4ed667 = L.marker(
+                [48.855907555969, 2.3925706744194],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_a81fbb252718e9811958a18a28b19c91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4bbaec85208c30182e46c776a39a5e6 = $(`<div id="html_c4bbaec85208c30182e46c776a39a5e6" style="width: 100.0%; height: 100.0%;"><b>Charonne - Robert et Sonia Delaunay</b><br>Capacity: 20<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_a81fbb252718e9811958a18a28b19c91.setContent(html_c4bbaec85208c30182e46c776a39a5e6);
+            
+        
+
+        marker_a3e4e15329d17b457940c9027f4ed667.bindPopup(popup_a81fbb252718e9811958a18a28b19c91)
+        ;
+
+        
+    
+    
+            var marker_6f300b2a4aefa5a6a81e28360456d473 = L.marker(
+                [48.835092787824, 2.3534681351338],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_6ebcc23e4ab2c8576cf35641a4f0ec80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_237bfaca6ea8ad6de5547d82ebd4d6e3 = $(`<div id="html_237bfaca6ea8ad6de5547d82ebd4d6e3" style="width: 100.0%; height: 100.0%;"><b>Le Brun - Gobelins</b><br>Capacity: 48<br>Bikes Available: 4<br>E-bikes Available: 4</div>`)[0];
+                popup_6ebcc23e4ab2c8576cf35641a4f0ec80.setContent(html_237bfaca6ea8ad6de5547d82ebd4d6e3);
+            
+        
+
+        marker_6f300b2a4aefa5a6a81e28360456d473.bindPopup(popup_6ebcc23e4ab2c8576cf35641a4f0ec80)
+        ;
+
+        
+    
+    
+            var marker_3a533ffbd24eaccaa2338432d995d5f6 = L.marker(
+                [48.848563233059, 2.3204218259346],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_bff072e8a8fa5d14e34a1827667e2b36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf3bb02dcb78c4e96bdf40b7d8c7e5cf = $(`<div id="html_cf3bb02dcb78c4e96bdf40b7d8c7e5cf" style="width: 100.0%; height: 100.0%;"><b>Vaneau - Sèvres</b><br>Capacity: 35<br>Bikes Available: 8<br>E-bikes Available: 7</div>`)[0];
+                popup_bff072e8a8fa5d14e34a1827667e2b36.setContent(html_cf3bb02dcb78c4e96bdf40b7d8c7e5cf);
+            
+        
+
+        marker_3a533ffbd24eaccaa2338432d995d5f6.bindPopup(popup_bff072e8a8fa5d14e34a1827667e2b36)
+        ;
+
+        
+    
+    
+            var marker_cdac44266a57058dc6e3e2f21476fd7b = L.marker(
+                [48.84389286531899, 2.3519663885235786],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_3b7112d2d1c17d9f9eca6d02e1fdca15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_237d4c6ac4e77da341922c1f58898e9f = $(`<div id="html_237d4c6ac4e77da341922c1f58898e9f" style="width: 100.0%; height: 100.0%;"><b>Lacépède - Monge</b><br>Capacity: 23<br>Bikes Available: 8<br>E-bikes Available: 2</div>`)[0];
+                popup_3b7112d2d1c17d9f9eca6d02e1fdca15.setContent(html_237d4c6ac4e77da341922c1f58898e9f);
+            
+        
+
+        marker_cdac44266a57058dc6e3e2f21476fd7b.bindPopup(popup_3b7112d2d1c17d9f9eca6d02e1fdca15)
+        ;
+
+        
+    
+    
+            var marker_ba3578624db0a413b1aa24247d0acabe = L.marker(
+                [48.81580226360801, 2.376804985105991],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_7bcbcdf73023b277cef15c240b322bc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ced0a055b493376cc2f6b32af5fe1afd = $(`<div id="html_ced0a055b493376cc2f6b32af5fe1afd" style="width: 100.0%; height: 100.0%;"><b>Pierre et Marie Curie - Maurice Thorez</b><br>Capacity: 27<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_7bcbcdf73023b277cef15c240b322bc2.setContent(html_ced0a055b493376cc2f6b32af5fe1afd);
+            
+        
+
+        marker_ba3578624db0a413b1aa24247d0acabe.bindPopup(popup_7bcbcdf73023b277cef15c240b322bc2)
+        ;
+
+        
+    
+    
+            var marker_a0e393ae94be81cdffe884c0ddfc7a06 = L.marker(
+                [48.779035118572, 2.4609763908985],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_2e44392d50badf21687ea58a9bfff50d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f48815ff6cbe2efa14070e5647f31a75 = $(`<div id="html_f48815ff6cbe2efa14070e5647f31a75" style="width: 100.0%; height: 100.0%;"><b>Bas du Mont-Mesly</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_2e44392d50badf21687ea58a9bfff50d.setContent(html_f48815ff6cbe2efa14070e5647f31a75);
+            
+        
+
+        marker_a0e393ae94be81cdffe884c0ddfc7a06.bindPopup(popup_2e44392d50badf21687ea58a9bfff50d)
+        ;
+
+        
+    
+    
+            var marker_b41e4737338c58d4434e835510857c0a = L.marker(
+                [48.835583838706, 2.2325500845909],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_12ef7fd9a777800aaed1827ccd194e67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1db1cd2cce4259bbc8bddf55cdd9bc6 = $(`<div id="html_d1db1cd2cce4259bbc8bddf55cdd9bc6" style="width: 100.0%; height: 100.0%;"><b>Silly - Galliéni</b><br>Capacity: 25<br>Bikes Available: 4<br>E-bikes Available: 1</div>`)[0];
+                popup_12ef7fd9a777800aaed1827ccd194e67.setContent(html_d1db1cd2cce4259bbc8bddf55cdd9bc6);
+            
+        
+
+        marker_b41e4737338c58d4434e835510857c0a.bindPopup(popup_12ef7fd9a777800aaed1827ccd194e67)
+        ;
+
+        
+    
+    
+            var marker_ddeb0fb54feb8d2041c8ab7ca2c05f24 = L.marker(
+                [48.851296433665276, 2.325061820447445],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_beb13e28f6b353bd8f79ed9e5107c488 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f7b512f99028ce3678597f15af69682 = $(`<div id="html_0f7b512f99028ce3678597f15af69682" style="width: 100.0%; height: 100.0%;"><b>Square Boucicaut</b><br>Capacity: 60<br>Bikes Available: 52<br>E-bikes Available: 25</div>`)[0];
+                popup_beb13e28f6b353bd8f79ed9e5107c488.setContent(html_0f7b512f99028ce3678597f15af69682);
+            
+        
+
+        marker_ddeb0fb54feb8d2041c8ab7ca2c05f24.bindPopup(popup_beb13e28f6b353bd8f79ed9e5107c488)
+        ;
+
+        
+    
+    
+            var marker_46248973816e118ad385c985ceebe5bc = L.marker(
+                [48.84504716661511, 2.3494647851273465],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_d71fbe6f86e43feaa92950f127259618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3400809946de1ce21e9ddfb71f535160 = $(`<div id="html_3400809946de1ce21e9ddfb71f535160" style="width: 100.0%; height: 100.0%;"><b>Thouin - Cardinal Lemoine</b><br>Capacity: 17<br>Bikes Available: 8<br>E-bikes Available: 4</div>`)[0];
+                popup_d71fbe6f86e43feaa92950f127259618.setContent(html_3400809946de1ce21e9ddfb71f535160);
+            
+        
+
+        marker_46248973816e118ad385c985ceebe5bc.bindPopup(popup_d71fbe6f86e43feaa92950f127259618)
+        ;
+
+        
+    
+    
+            var marker_14c0bcdc5955726298b96ea9049ed03a = L.marker(
+                [48.878370277021, 2.440523876268],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_da220d9a5ca0b994dc47479e45ff5bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09c2abcf769577f00337935d16c75549 = $(`<div id="html_09c2abcf769577f00337935d16c75549" style="width: 100.0%; height: 100.0%;"><b>Charcot - Benfleet</b><br>Capacity: 28<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_da220d9a5ca0b994dc47479e45ff5bb6.setContent(html_09c2abcf769577f00337935d16c75549);
+            
+        
+
+        marker_14c0bcdc5955726298b96ea9049ed03a.bindPopup(popup_da220d9a5ca0b994dc47479e45ff5bb6)
+        ;
+
+        
+    
+    
+            var marker_3a99db03e8624ef2fc151c9ca7acc729 = L.marker(
+                [48.82234096593411, 2.327861653302471],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_14185203f0e98c4a3bbfb02dc408f620 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f93037dfaf93f80cbaa1ed91ce91a64b = $(`<div id="html_f93037dfaf93f80cbaa1ed91ce91a64b" style="width: 100.0%; height: 100.0%;"><b>Le Brix et Mesmin - Jourdan</b><br>Capacity: 21<br>Bikes Available: 2<br>E-bikes Available: 0</div>`)[0];
+                popup_14185203f0e98c4a3bbfb02dc408f620.setContent(html_f93037dfaf93f80cbaa1ed91ce91a64b);
+            
+        
+
+        marker_3a99db03e8624ef2fc151c9ca7acc729.bindPopup(popup_14185203f0e98c4a3bbfb02dc408f620)
+        ;
+
+        
+    
+    
+            var marker_3d70885f8713c0239c7752b8deacb92c = L.marker(
+                [48.86785, 2.446748],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b28c1b92e74f89fa36da2571721c204d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c22dbac18f8ba90cbafa99c8d43bad1 = $(`<div id="html_5c22dbac18f8ba90cbafa99c8d43bad1" style="width: 100.0%; height: 100.0%;"><b>Romainville - Vaillant-Couturier</b><br>Capacity: 38<br>Bikes Available: 3<br>E-bikes Available: 3</div>`)[0];
+                popup_b28c1b92e74f89fa36da2571721c204d.setContent(html_5c22dbac18f8ba90cbafa99c8d43bad1);
+            
+        
+
+        marker_3d70885f8713c0239c7752b8deacb92c.bindPopup(popup_b28c1b92e74f89fa36da2571721c204d)
+        ;
+
+        
+    
+    
+            var marker_5257c5460727bb72963590d64ea049f3 = L.marker(
+                [48.768482147086, 2.4711590635627],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_3e97e6b25f03205a81bd97090b5a5c9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a401b78a73164d57d3b62b64617365f5 = $(`<div id="html_a401b78a73164d57d3b62b64617365f5" style="width: 100.0%; height: 100.0%;"><b>Sarrazins - Saussure</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_3e97e6b25f03205a81bd97090b5a5c9a.setContent(html_a401b78a73164d57d3b62b64617365f5);
+            
+        
+
+        marker_5257c5460727bb72963590d64ea049f3.bindPopup(popup_3e97e6b25f03205a81bd97090b5a5c9a)
+        ;
+
+        
+    
+    
+            var marker_74c992232cc150abc88648e60c1395a0 = L.marker(
+                [48.870828911558, 2.3459213599563],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_f664b7c219ddf30f29bba4eb6cf8e8a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5103dc21b7b7539a167f78c50068de4 = $(`<div id="html_d5103dc21b7b7539a167f78c50068de4" style="width: 100.0%; height: 100.0%;"><b>Saint-Fiacre - Poissonière</b><br>Capacity: 35<br>Bikes Available: 34<br>E-bikes Available: 8</div>`)[0];
+                popup_f664b7c219ddf30f29bba4eb6cf8e8a5.setContent(html_d5103dc21b7b7539a167f78c50068de4);
+            
+        
+
+        marker_74c992232cc150abc88648e60c1395a0.bindPopup(popup_f664b7c219ddf30f29bba4eb6cf8e8a5)
+        ;
+
+        
+    
+    
+            var marker_3121c1dafb5dee808bd7a466ad96f9ad = L.marker(
+                [48.89792240854517, 2.32851451022192],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_a6e1b427477583186c825121873bc32f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38e99948f64330419caeecdff390e062 = $(`<div id="html_38e99948f64330419caeecdff390e062" style="width: 100.0%; height: 100.0%;"><b>Porte de Saint-Ouen - Bessières</b><br>Capacity: 42<br>Bikes Available: 2<br>E-bikes Available: 1</div>`)[0];
+                popup_a6e1b427477583186c825121873bc32f.setContent(html_38e99948f64330419caeecdff390e062);
+            
+        
+
+        marker_3121c1dafb5dee808bd7a466ad96f9ad.bindPopup(popup_a6e1b427477583186c825121873bc32f)
+        ;
+
+        
+    
+    
+            var marker_43d725ba50223f6b20daa3b87d4c029c = L.marker(
+                [48.89594736851349, 2.381133802246315],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b4612bf7f7088a6d1b8c39d139b74744 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b0bbc11f696db68f5eb9b66a3a207f6 = $(`<div id="html_5b0bbc11f696db68f5eb9b66a3a207f6" style="width: 100.0%; height: 100.0%;"><b>Cambrai - Benjamin Constant</b><br>Capacity: 43<br>Bikes Available: 9<br>E-bikes Available: 1</div>`)[0];
+                popup_b4612bf7f7088a6d1b8c39d139b74744.setContent(html_5b0bbc11f696db68f5eb9b66a3a207f6);
+            
+        
+
+        marker_43d725ba50223f6b20daa3b87d4c029c.bindPopup(popup_b4612bf7f7088a6d1b8c39d139b74744)
+        ;
+
+        
+    
+    
+            var marker_94291a84122541ad83f3dc17dbab5ff0 = L.marker(
+                [48.84884147189881, 2.426325418925233],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_dcb28d160d2768bb96b130854f1eec66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e18b5ca4adb38dc02373fc00659a9078 = $(`<div id="html_e18b5ca4adb38dc02373fc00659a9078" style="width: 100.0%; height: 100.0%;"><b>Lagny - Victor Basch</b><br>Capacity: 26<br>Bikes Available: 5<br>E-bikes Available: 3</div>`)[0];
+                popup_dcb28d160d2768bb96b130854f1eec66.setContent(html_e18b5ca4adb38dc02373fc00659a9078);
+            
+        
+
+        marker_94291a84122541ad83f3dc17dbab5ff0.bindPopup(popup_dcb28d160d2768bb96b130854f1eec66)
+        ;
+
+        
+    
+    
+            var marker_ddf5bbb7b2c7a9616d5153959a0ef612 = L.marker(
+                [48.85772148887421, 2.2549109905958176],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_942d4f4ff405eaf82197056a62e34671 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28ce1ef70d968ae3b6fa7f4094187e92 = $(`<div id="html_28ce1ef70d968ae3b6fa7f4094187e92" style="width: 100.0%; height: 100.0%;"><b>Saint-Cloud - Hippodrome</b><br>Capacity: 30<br>Bikes Available: 14<br>E-bikes Available: 10</div>`)[0];
+                popup_942d4f4ff405eaf82197056a62e34671.setContent(html_28ce1ef70d968ae3b6fa7f4094187e92);
+            
+        
+
+        marker_ddf5bbb7b2c7a9616d5153959a0ef612.bindPopup(popup_942d4f4ff405eaf82197056a62e34671)
+        ;
+
+        
+    
+    
+            var marker_f1c1da4bdc2e76e3e90b4095a09272f5 = L.marker(
+                [48.81807418981508, 2.3267009854316716],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_07d196940df79a00562ac258d89750ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf04228426d39a677699a5b67a1b6f37 = $(`<div id="html_cf04228426d39a677699a5b67a1b6f37" style="width: 100.0%; height: 100.0%;"><b>Louis Lejeune - Barbès</b><br>Capacity: 25<br>Bikes Available: 8<br>E-bikes Available: 1</div>`)[0];
+                popup_07d196940df79a00562ac258d89750ec.setContent(html_cf04228426d39a677699a5b67a1b6f37);
+            
+        
+
+        marker_f1c1da4bdc2e76e3e90b4095a09272f5.bindPopup(popup_07d196940df79a00562ac258d89750ec)
+        ;
+
+        
+    
+    
+            var marker_08f563056e600ce9ef26c0d653dfb2e6 = L.marker(
+                [48.83823094269141, 2.270506024360657],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_659ddf06b65ad52a91bafc58c441d5ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ffaae0625e6ae89303544510eb9506b = $(`<div id="html_8ffaae0625e6ae89303544510eb9506b" style="width: 100.0%; height: 100.0%;"><b>Général Martial Valin - Pont du Garigliano</b><br>Capacity: 16<br>Bikes Available: 8<br>E-bikes Available: 1</div>`)[0];
+                popup_659ddf06b65ad52a91bafc58c441d5ad.setContent(html_8ffaae0625e6ae89303544510eb9506b);
+            
+        
+
+        marker_08f563056e600ce9ef26c0d653dfb2e6.bindPopup(popup_659ddf06b65ad52a91bafc58c441d5ad)
+        ;
+
+        
+    
+    
+            var marker_8b4ab021d2bb7e5c2204491c5d4399bd = L.marker(
+                [48.778192750803, 2.3963020229163],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_5c7abba569dc383f6330a50f51c1b614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8857b1bb5b8c96854f489f7795d17e5c = $(`<div id="html_8857b1bb5b8c96854f489f7795d17e5c" style="width: 100.0%; height: 100.0%;"><b>Rouget de L'isle - Watteau</b><br>Capacity: 20<br>Bikes Available: 2<br>E-bikes Available: 2</div>`)[0];
+                popup_5c7abba569dc383f6330a50f51c1b614.setContent(html_8857b1bb5b8c96854f489f7795d17e5c);
+            
+        
+
+        marker_8b4ab021d2bb7e5c2204491c5d4399bd.bindPopup(popup_5c7abba569dc383f6330a50f51c1b614)
+        ;
+
+        
+    
+    
+            var marker_f5e777bfa81725c994f36c915836225d = L.marker(
+                [48.837525839067, 2.3360354080796],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_e1f648c13c159d8e24c85d8ad74925bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b526049a6f9907d799e1b8736de00f33 = $(`<div id="html_b526049a6f9907d799e1b8736de00f33" style="width: 100.0%; height: 100.0%;"><b>Cassini - Denfert-Rochereau</b><br>Capacity: 25<br>Bikes Available: 3<br>E-bikes Available: 3</div>`)[0];
+                popup_e1f648c13c159d8e24c85d8ad74925bc.setContent(html_b526049a6f9907d799e1b8736de00f33);
+            
+        
+
+        marker_f5e777bfa81725c994f36c915836225d.bindPopup(popup_e1f648c13c159d8e24c85d8ad74925bc)
+        ;
+
+        
+    
+    
+            var marker_215aed8e0300a57b716bd0936b265245 = L.marker(
+                [48.819428333369, 2.3433353751898],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_d08a9e1f8603e34067cbde67f0e41567 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_196feba1d4a11adb9773156aea13969a = $(`<div id="html_196feba1d4a11adb9773156aea13969a" style="width: 100.0%; height: 100.0%;"><b>Jourdan - Stade Charléty</b><br>Capacity: 60<br>Bikes Available: 12<br>E-bikes Available: 10</div>`)[0];
+                popup_d08a9e1f8603e34067cbde67f0e41567.setContent(html_196feba1d4a11adb9773156aea13969a);
+            
+        
+
+        marker_215aed8e0300a57b716bd0936b265245.bindPopup(popup_d08a9e1f8603e34067cbde67f0e41567)
+        ;
+
+        
+    
+    
+            var marker_370d344f6de77bd558c500dd4e89eb4d = L.marker(
+                [48.93626891059109, 2.3588666820200914],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_fc1fdaeb0c0e87a43b964575acea1e4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_382b3ec963c4b9a9f234ee176378b33d = $(`<div id="html_382b3ec963c4b9a9f234ee176378b33d" style="width: 100.0%; height: 100.0%;"><b>Basilique</b><br>Capacity: 22<br>Bikes Available: 16<br>E-bikes Available: 7</div>`)[0];
+                popup_fc1fdaeb0c0e87a43b964575acea1e4f.setContent(html_382b3ec963c4b9a9f234ee176378b33d);
+            
+        
+
+        marker_370d344f6de77bd558c500dd4e89eb4d.bindPopup(popup_fc1fdaeb0c0e87a43b964575acea1e4f)
+        ;
+
+        
+    
+    
+            var marker_f8950cfe96e9de8736f52a6ecf5d4af2 = L.marker(
+                [48.855907555969, 2.3925706744194],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_6951b2825e33c1a2b15e6ef3382087d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd7afe1233cc647cfd5108366be0af83 = $(`<div id="html_bd7afe1233cc647cfd5108366be0af83" style="width: 100.0%; height: 100.0%;"><b>Charonne - Robert et Sonia Delaunay</b><br>Capacity: 20<br>Bikes Available: 2<br>E-bikes Available: 2</div>`)[0];
+                popup_6951b2825e33c1a2b15e6ef3382087d7.setContent(html_bd7afe1233cc647cfd5108366be0af83);
+            
+        
+
+        marker_f8950cfe96e9de8736f52a6ecf5d4af2.bindPopup(popup_6951b2825e33c1a2b15e6ef3382087d7)
+        ;
+
+        
+    
+    
+            var marker_f37d1d31f10df3d484ee27230a13d0c6 = L.marker(
+                [48.835092787824, 2.3534681351338],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_9c22fdaf5a1413475ad8af8db41eb2a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fca4551c1699fa769c9275fa25f3a98 = $(`<div id="html_8fca4551c1699fa769c9275fa25f3a98" style="width: 100.0%; height: 100.0%;"><b>Le Brun - Gobelins</b><br>Capacity: 48<br>Bikes Available: 4<br>E-bikes Available: 4</div>`)[0];
+                popup_9c22fdaf5a1413475ad8af8db41eb2a0.setContent(html_8fca4551c1699fa769c9275fa25f3a98);
+            
+        
+
+        marker_f37d1d31f10df3d484ee27230a13d0c6.bindPopup(popup_9c22fdaf5a1413475ad8af8db41eb2a0)
+        ;
+
+        
+    
+    
+            var marker_7358c78a4175f5fb9df63fb8038adf89 = L.marker(
+                [48.848563233059, 2.3204218259346],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_f6f73049ce73ff5b5c3766c911c1f5b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b7646e8958eaf98b3581eb04834c0a3 = $(`<div id="html_6b7646e8958eaf98b3581eb04834c0a3" style="width: 100.0%; height: 100.0%;"><b>Vaneau - Sèvres</b><br>Capacity: 35<br>Bikes Available: 21<br>E-bikes Available: 8</div>`)[0];
+                popup_f6f73049ce73ff5b5c3766c911c1f5b4.setContent(html_6b7646e8958eaf98b3581eb04834c0a3);
+            
+        
+
+        marker_7358c78a4175f5fb9df63fb8038adf89.bindPopup(popup_f6f73049ce73ff5b5c3766c911c1f5b4)
+        ;
+
+        
+    
+    
+            var marker_6ce432f12f4fd2801948e1ea6454b484 = L.marker(
+                [48.84708159081946, 2.321374788880348],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_339213bb0aaf6657dda183578a68a36a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7c8bb5cef4562f71148a76a9de33315 = $(`<div id="html_b7c8bb5cef4562f71148a76a9de33315" style="width: 100.0%; height: 100.0%;"><b>Saint-Romain - Cherche-Midi</b><br>Capacity: 17<br>Bikes Available: 12<br>E-bikes Available: 2</div>`)[0];
+                popup_339213bb0aaf6657dda183578a68a36a.setContent(html_b7c8bb5cef4562f71148a76a9de33315);
+            
+        
+
+        marker_6ce432f12f4fd2801948e1ea6454b484.bindPopup(popup_339213bb0aaf6657dda183578a68a36a)
+        ;
+
+        
+    
+    
+            var marker_69c63973689def32ba4a19e1f6a9eb81 = L.marker(
+                [48.779035118572, 2.4609763908985],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_90485926e78cc26a541231506191b315 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3670b0cb8399ff363cfe0163dcf03554 = $(`<div id="html_3670b0cb8399ff363cfe0163dcf03554" style="width: 100.0%; height: 100.0%;"><b>Bas du Mont-Mesly</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_90485926e78cc26a541231506191b315.setContent(html_3670b0cb8399ff363cfe0163dcf03554);
+            
+        
+
+        marker_69c63973689def32ba4a19e1f6a9eb81.bindPopup(popup_90485926e78cc26a541231506191b315)
+        ;
+
+        
+    
+    
+            var marker_af0b3f42d85bc6329520374f257b6ce2 = L.marker(
+                [48.862453313908, 2.1961666225454],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_85b06c7db731ac650f74a74f5134115c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b36a296bfd00805dba60676cd05a5da = $(`<div id="html_9b36a296bfd00805dba60676cd05a5da" style="width: 100.0%; height: 100.0%;"><b>Place Nelson Mandela</b><br>Capacity: 22<br>Bikes Available: 5<br>E-bikes Available: 4</div>`)[0];
+                popup_85b06c7db731ac650f74a74f5134115c.setContent(html_9b36a296bfd00805dba60676cd05a5da);
+            
+        
+
+        marker_af0b3f42d85bc6329520374f257b6ce2.bindPopup(popup_85b06c7db731ac650f74a74f5134115c)
+        ;
+
+        
+    
+    
+            var marker_9a2b5f5d4a8fcd4976568d07a1a07b41 = L.marker(
+                [48.851296433665276, 2.325061820447445],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_e5737d7a4ebf5a6ca78b6ad210d52bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_123f3bd76559e1b937f501480c1df565 = $(`<div id="html_123f3bd76559e1b937f501480c1df565" style="width: 100.0%; height: 100.0%;"><b>Square Boucicaut</b><br>Capacity: 60<br>Bikes Available: 55<br>E-bikes Available: 9</div>`)[0];
+                popup_e5737d7a4ebf5a6ca78b6ad210d52bb8.setContent(html_123f3bd76559e1b937f501480c1df565);
+            
+        
+
+        marker_9a2b5f5d4a8fcd4976568d07a1a07b41.bindPopup(popup_e5737d7a4ebf5a6ca78b6ad210d52bb8)
+        ;
+
+        
+    
+    
+            var marker_4535b0e46b76cbefa842522ff47e4b7b = L.marker(
+                [48.8570414504784, 2.37289470306807],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_7aa499e757df76a2ece3c64ff1021e06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a2f7cdd19ef60123a19721352186db7 = $(`<div id="html_2a2f7cdd19ef60123a19721352186db7" style="width: 100.0%; height: 100.0%;"><b>Froment - Bréguet</b><br>Capacity: 43<br>Bikes Available: 3<br>E-bikes Available: 3</div>`)[0];
+                popup_7aa499e757df76a2ece3c64ff1021e06.setContent(html_2a2f7cdd19ef60123a19721352186db7);
+            
+        
+
+        marker_4535b0e46b76cbefa842522ff47e4b7b.bindPopup(popup_7aa499e757df76a2ece3c64ff1021e06)
+        ;
+
+        
+    
+    
+            var marker_cf0d1c67c1bc699865bd21825cefc6a6 = L.marker(
+                [48.878370277021, 2.440523876268],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_a9aada49be7178f095564f495fdc646a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fcb66e00b02806211c17e9ecf7db694 = $(`<div id="html_8fcb66e00b02806211c17e9ecf7db694" style="width: 100.0%; height: 100.0%;"><b>Charcot - Benfleet</b><br>Capacity: 28<br>Bikes Available: 2<br>E-bikes Available: 2</div>`)[0];
+                popup_a9aada49be7178f095564f495fdc646a.setContent(html_8fcb66e00b02806211c17e9ecf7db694);
+            
+        
+
+        marker_cf0d1c67c1bc699865bd21825cefc6a6.bindPopup(popup_a9aada49be7178f095564f495fdc646a)
+        ;
+
+        
+    
+    
+            var marker_023851ea942580354363d871ea572701 = L.marker(
+                [48.826103771275, 2.3004549373748],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b26c182e28507bd25c99736782ea8129 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_194ed2bfce0e0b323162066be56ad1f5 = $(`<div id="html_194ed2bfce0e0b323162066be56ad1f5" style="width: 100.0%; height: 100.0%;"><b>Bracion - Périphérique</b><br>Capacity: 30<br>Bikes Available: 8<br>E-bikes Available: 8</div>`)[0];
+                popup_b26c182e28507bd25c99736782ea8129.setContent(html_194ed2bfce0e0b323162066be56ad1f5);
+            
+        
+
+        marker_023851ea942580354363d871ea572701.bindPopup(popup_b26c182e28507bd25c99736782ea8129)
+        ;
+
+        
+    
+    
+            var marker_1406525b3f018b3be36cba801e4cb8b2 = L.marker(
+                [48.840855311763, 2.3875549435616],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_6b0d59a2df828a6f908ce761c5d20e17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d716df9feb0b07d51c7c78c75cbfa005 = $(`<div id="html_d716df9feb0b07d51c7c78c75cbfa005" style="width: 100.0%; height: 100.0%;"><b>Mairie du 12ème</b><br>Capacity: 30<br>Bikes Available: 2<br>E-bikes Available: 1</div>`)[0];
+                popup_6b0d59a2df828a6f908ce761c5d20e17.setContent(html_d716df9feb0b07d51c7c78c75cbfa005);
+            
+        
+
+        marker_1406525b3f018b3be36cba801e4cb8b2.bindPopup(popup_6b0d59a2df828a6f908ce761c5d20e17)
+        ;
+
+        
+    
+    
+            var marker_42a446ecc25cd042ae329656b93e0c91 = L.marker(
+                [48.871417284355, 2.3076787590981],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_259ae21d005bbdb65cf0ba99bff276f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_013bc8237f75f137beb5f683b8eb74ab = $(`<div id="html_013bc8237f75f137beb5f683b8eb74ab" style="width: 100.0%; height: 100.0%;"><b>Boétie - Ponthieu</b><br>Capacity: 45<br>Bikes Available: 45<br>E-bikes Available: 14</div>`)[0];
+                popup_259ae21d005bbdb65cf0ba99bff276f1.setContent(html_013bc8237f75f137beb5f683b8eb74ab);
+            
+        
+
+        marker_42a446ecc25cd042ae329656b93e0c91.bindPopup(popup_259ae21d005bbdb65cf0ba99bff276f1)
+        ;
+
+        
+    
+    
+            var marker_4dd9b3e31e5b3e04bfbd9ad3176c83a7 = L.marker(
+                [48.830981659316855, 2.3481646925210953],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_7c27f3dff13006295a64fb76bf975b1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36cd93e41f739cf91ccb138588a154b6 = $(`<div id="html_36cd93e41f739cf91ccb138588a154b6" style="width: 100.0%; height: 100.0%;"><b>Croulebarde - Corvisart</b><br>Capacity: 34<br>Bikes Available: 4<br>E-bikes Available: 1</div>`)[0];
+                popup_7c27f3dff13006295a64fb76bf975b1f.setContent(html_36cd93e41f739cf91ccb138588a154b6);
+            
+        
+
+        marker_4dd9b3e31e5b3e04bfbd9ad3176c83a7.bindPopup(popup_7c27f3dff13006295a64fb76bf975b1f)
+        ;
+
+        
+    
+    
+            var marker_2a93491739a3fed2fc203b084f60068a = L.marker(
+                [48.82234096593411, 2.327861653302471],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b17a707066f05f047a747a424b65eda1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ec013d2ee6c35396bbefee5304dde89 = $(`<div id="html_0ec013d2ee6c35396bbefee5304dde89" style="width: 100.0%; height: 100.0%;"><b>Le Brix et Mesmin - Jourdan</b><br>Capacity: 21<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_b17a707066f05f047a747a424b65eda1.setContent(html_0ec013d2ee6c35396bbefee5304dde89);
+            
+        
+
+        marker_2a93491739a3fed2fc203b084f60068a.bindPopup(popup_b17a707066f05f047a747a424b65eda1)
+        ;
+
+        
+    
+    
+            var marker_fecfb0bcebc458e203eb5b7998df003d = L.marker(
+                [48.86785, 2.446748],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_e37e9dfc2b24ff7ea99cd33b397bbdd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b7203b4c6f1df3610d54c7c9fa8ba2f = $(`<div id="html_9b7203b4c6f1df3610d54c7c9fa8ba2f" style="width: 100.0%; height: 100.0%;"><b>Romainville - Vaillant-Couturier</b><br>Capacity: 38<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_e37e9dfc2b24ff7ea99cd33b397bbdd1.setContent(html_9b7203b4c6f1df3610d54c7c9fa8ba2f);
+            
+        
+
+        marker_fecfb0bcebc458e203eb5b7998df003d.bindPopup(popup_e37e9dfc2b24ff7ea99cd33b397bbdd1)
+        ;
+
+        
+    
+    
+            var marker_10e6984859628c940426dd27de01033f = L.marker(
+                [48.768482147086, 2.4711590635627],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_99bdc72ab972baafba036c9561ed990a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b70e0376e7bb10beb3117f0bca27afd9 = $(`<div id="html_b70e0376e7bb10beb3117f0bca27afd9" style="width: 100.0%; height: 100.0%;"><b>Sarrazins - Saussure</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_99bdc72ab972baafba036c9561ed990a.setContent(html_b70e0376e7bb10beb3117f0bca27afd9);
+            
+        
+
+        marker_10e6984859628c940426dd27de01033f.bindPopup(popup_99bdc72ab972baafba036c9561ed990a)
+        ;
+
+        
+    
+    
+            var marker_245285479ad6a000e051c5261908af72 = L.marker(
+                [48.865983, 2.275725],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_c353b57d61d9449cbbea5b28ddda6bf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9175855077c4c5b305eda5fd9a556f83 = $(`<div id="html_9175855077c4c5b305eda5fd9a556f83" style="width: 100.0%; height: 100.0%;"><b>Benjamin Godard - Victor Hugo</b><br>Capacity: 35<br>Bikes Available: 1<br>E-bikes Available: 1</div>`)[0];
+                popup_c353b57d61d9449cbbea5b28ddda6bf5.setContent(html_9175855077c4c5b305eda5fd9a556f83);
+            
+        
+
+        marker_245285479ad6a000e051c5261908af72.bindPopup(popup_c353b57d61d9449cbbea5b28ddda6bf5)
+        ;
+
+        
+    
+    
+            var marker_006fea37ba6c1ec4c6af25eac91ffe2a = L.marker(
+                [48.87929591733507, 2.3373600840568547],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_8a606b88d76f158185db8a9730be8cad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae0e40316ce03c3b3782a79f3a356b4 = $(`<div id="html_8ae0e40316ce03c3b3782a79f3a356b4" style="width: 100.0%; height: 100.0%;"><b>Toudouze - Clauzel</b><br>Capacity: 21<br>Bikes Available: 5<br>E-bikes Available: 3</div>`)[0];
+                popup_8a606b88d76f158185db8a9730be8cad.setContent(html_8ae0e40316ce03c3b3782a79f3a356b4);
+            
+        
+
+        marker_006fea37ba6c1ec4c6af25eac91ffe2a.bindPopup(popup_8a606b88d76f158185db8a9730be8cad)
+        ;
+
+        
+    
+    
+            var marker_94995755c22e8d38273a76cb622f245b = L.marker(
+                [48.837525839067, 2.3360354080796],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_1cb227af87ca782aebca097d90ce3a44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c7a38dd1d7043fa0193690f92b76d3e = $(`<div id="html_5c7a38dd1d7043fa0193690f92b76d3e" style="width: 100.0%; height: 100.0%;"><b>Cassini - Denfert-Rochereau</b><br>Capacity: 25<br>Bikes Available: 7<br>E-bikes Available: 4</div>`)[0];
+                popup_1cb227af87ca782aebca097d90ce3a44.setContent(html_5c7a38dd1d7043fa0193690f92b76d3e);
+            
+        
+
+        marker_94995755c22e8d38273a76cb622f245b.bindPopup(popup_1cb227af87ca782aebca097d90ce3a44)
+        ;
+
+        
+    
+    
+            var marker_b2d9032c361e69ef4561b187907604b8 = L.marker(
+                [48.855907555969, 2.3925706744194],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_e2b54a1c0bb6d22a90127d857dc77de8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c240a69b2161931af57aa8316c36325 = $(`<div id="html_2c240a69b2161931af57aa8316c36325" style="width: 100.0%; height: 100.0%;"><b>Charonne - Robert et Sonia Delaunay</b><br>Capacity: 20<br>Bikes Available: 4<br>E-bikes Available: 4</div>`)[0];
+                popup_e2b54a1c0bb6d22a90127d857dc77de8.setContent(html_2c240a69b2161931af57aa8316c36325);
+            
+        
+
+        marker_b2d9032c361e69ef4561b187907604b8.bindPopup(popup_e2b54a1c0bb6d22a90127d857dc77de8)
+        ;
+
+        
+    
+    
+            var marker_8f6264df169d614711c231cb12ccdf6c = L.marker(
+                [48.875448033960744, 2.315508019010038],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_063448d1f955c38120928f4c6e105796 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f2d098070b312d0b2ac281715f7aef3 = $(`<div id="html_5f2d098070b312d0b2ac281715f7aef3" style="width: 100.0%; height: 100.0%;"><b>Messine - Place Du Pérou</b><br>Capacity: 12<br>Bikes Available: 10<br>E-bikes Available: 8</div>`)[0];
+                popup_063448d1f955c38120928f4c6e105796.setContent(html_5f2d098070b312d0b2ac281715f7aef3);
+            
+        
+
+        marker_8f6264df169d614711c231cb12ccdf6c.bindPopup(popup_063448d1f955c38120928f4c6e105796)
+        ;
+
+        
+    
+    
+            var marker_3ec7f6dffaad279134e82de2d478baa9 = L.marker(
+                [48.835092787824, 2.3534681351338],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_b7c541c426692e9d486d7c81a3cf3b3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c09963a58103d65d91e77be83ef26aab = $(`<div id="html_c09963a58103d65d91e77be83ef26aab" style="width: 100.0%; height: 100.0%;"><b>Le Brun - Gobelins</b><br>Capacity: 48<br>Bikes Available: 2<br>E-bikes Available: 2</div>`)[0];
+                popup_b7c541c426692e9d486d7c81a3cf3b3f.setContent(html_c09963a58103d65d91e77be83ef26aab);
+            
+        
+
+        marker_3ec7f6dffaad279134e82de2d478baa9.bindPopup(popup_b7c541c426692e9d486d7c81a3cf3b3f)
+        ;
+
+        
+    
+    
+            var marker_8fad18c45aa26d1bb15c5401db74b875 = L.marker(
+                [48.85165383178419, 2.3308077827095985],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_062e8adbfa83c92119b6ffa56569b8bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96a91cf7defd33811761323afedd87a2 = $(`<div id="html_96a91cf7defd33811761323afedd87a2" style="width: 100.0%; height: 100.0%;"><b>Saint-Sulpice</b><br>Capacity: 21<br>Bikes Available: 18<br>E-bikes Available: 2</div>`)[0];
+                popup_062e8adbfa83c92119b6ffa56569b8bd.setContent(html_96a91cf7defd33811761323afedd87a2);
+            
+        
+
+        marker_8fad18c45aa26d1bb15c5401db74b875.bindPopup(popup_062e8adbfa83c92119b6ffa56569b8bd)
+        ;
+
+        
+    
+    
+            var marker_ff0c8d48b68fe3c86bc056eb5b9f4f1a = L.marker(
+                [48.848563233059, 2.3204218259346],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_ffb0a3181acbace86a71454a2abe3acb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26c730113ce92071c457d84995456b49 = $(`<div id="html_26c730113ce92071c457d84995456b49" style="width: 100.0%; height: 100.0%;"><b>Vaneau - Sèvres</b><br>Capacity: 35<br>Bikes Available: 17<br>E-bikes Available: 2</div>`)[0];
+                popup_ffb0a3181acbace86a71454a2abe3acb.setContent(html_26c730113ce92071c457d84995456b49);
+            
+        
+
+        marker_ff0c8d48b68fe3c86bc056eb5b9f4f1a.bindPopup(popup_ffb0a3181acbace86a71454a2abe3acb)
+        ;
+
+        
+    
+    
+            var marker_cdfb8513e2598dbff39c1e90c5c803fc = L.marker(
+                [48.84708159081946, 2.321374788880348],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_0bc41c4d0fccfcfb3958579ea6a10734 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_280c9844d2209eca498da3fe3a51d55e = $(`<div id="html_280c9844d2209eca498da3fe3a51d55e" style="width: 100.0%; height: 100.0%;"><b>Saint-Romain - Cherche-Midi</b><br>Capacity: 17<br>Bikes Available: 10<br>E-bikes Available: 2</div>`)[0];
+                popup_0bc41c4d0fccfcfb3958579ea6a10734.setContent(html_280c9844d2209eca498da3fe3a51d55e);
+            
+        
+
+        marker_cdfb8513e2598dbff39c1e90c5c803fc.bindPopup(popup_0bc41c4d0fccfcfb3958579ea6a10734)
+        ;
+
+        
+    
+    
+            var marker_d12e54d8256df113ceb860aa1088f90e = L.marker(
+                [48.81580226360801, 2.376804985105991],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_390817b434269f3204d8e3859b139180 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14d4fac746fa893eebe3cbb760012d3a = $(`<div id="html_14d4fac746fa893eebe3cbb760012d3a" style="width: 100.0%; height: 100.0%;"><b>Pierre et Marie Curie - Maurice Thorez</b><br>Capacity: 27<br>Bikes Available: 2<br>E-bikes Available: 1</div>`)[0];
+                popup_390817b434269f3204d8e3859b139180.setContent(html_14d4fac746fa893eebe3cbb760012d3a);
+            
+        
+
+        marker_d12e54d8256df113ceb860aa1088f90e.bindPopup(popup_390817b434269f3204d8e3859b139180)
+        ;
+
+        
+    
+    
+            var marker_d580df19113ef0f6fb0546549f63fdf2 = L.marker(
+                [48.779035118572, 2.4609763908985],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_c19ed2b97670f41fdbc208cfbf29c142 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6a76a8b7cbe3e9df6925ccb146e6f29 = $(`<div id="html_b6a76a8b7cbe3e9df6925ccb146e6f29" style="width: 100.0%; height: 100.0%;"><b>Bas du Mont-Mesly</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_c19ed2b97670f41fdbc208cfbf29c142.setContent(html_b6a76a8b7cbe3e9df6925ccb146e6f29);
+            
+        
+
+        marker_d580df19113ef0f6fb0546549f63fdf2.bindPopup(popup_c19ed2b97670f41fdbc208cfbf29c142)
+        ;
+
+        
+    
+    
+            var marker_c57d4f3e0f760ec29e8f61e6b8619812 = L.marker(
+                [48.851296433665276, 2.325061820447445],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_8d8454985064014c0b42ad6871e8a65c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_605b198dff7aff11cd9734b325e4edc8 = $(`<div id="html_605b198dff7aff11cd9734b325e4edc8" style="width: 100.0%; height: 100.0%;"><b>Square Boucicaut</b><br>Capacity: 60<br>Bikes Available: 51<br>E-bikes Available: 5</div>`)[0];
+                popup_8d8454985064014c0b42ad6871e8a65c.setContent(html_605b198dff7aff11cd9734b325e4edc8);
+            
+        
+
+        marker_c57d4f3e0f760ec29e8f61e6b8619812.bindPopup(popup_8d8454985064014c0b42ad6871e8a65c)
+        ;
+
+        
+    
+    
+            var marker_90cbf241eb2566139312447357e8dda5 = L.marker(
+                [48.84504716661511, 2.3494647851273465],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_d61357234b1fe7131b768d16a88c3027 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4e836bccd858420986a3172a2f1ebe5 = $(`<div id="html_d4e836bccd858420986a3172a2f1ebe5" style="width: 100.0%; height: 100.0%;"><b>Thouin - Cardinal Lemoine</b><br>Capacity: 17<br>Bikes Available: 2<br>E-bikes Available: 1</div>`)[0];
+                popup_d61357234b1fe7131b768d16a88c3027.setContent(html_d4e836bccd858420986a3172a2f1ebe5);
+            
+        
+
+        marker_90cbf241eb2566139312447357e8dda5.bindPopup(popup_d61357234b1fe7131b768d16a88c3027)
+        ;
+
+        
+    
+    
+            var marker_55bf208fbc377a18ed570ce19fb5fbeb = L.marker(
+                [48.8570414504784, 2.37289470306807],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_8470d40cc51f8b67986a911c79f67f6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a6b85198927b72a34b033309c2ece5a = $(`<div id="html_0a6b85198927b72a34b033309c2ece5a" style="width: 100.0%; height: 100.0%;"><b>Froment - Bréguet</b><br>Capacity: 43<br>Bikes Available: 5<br>E-bikes Available: 5</div>`)[0];
+                popup_8470d40cc51f8b67986a911c79f67f6d.setContent(html_0a6b85198927b72a34b033309c2ece5a);
+            
+        
+
+        marker_55bf208fbc377a18ed570ce19fb5fbeb.bindPopup(popup_8470d40cc51f8b67986a911c79f67f6d)
+        ;
+
+        
+    
+    
+            var marker_ca125503d6d4d7d1371a0d899863d833 = L.marker(
+                [48.881973298352, 2.301132157445],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_377fdba20d6fc93d1bab75f8d9604660 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5b11b2927b20f8b14941c6cd32a1386 = $(`<div id="html_a5b11b2927b20f8b14941c6cd32a1386" style="width: 100.0%; height: 100.0%;"><b>Jouffroy d'Abbans - Wagram</b><br>Capacity: 40<br>Bikes Available: 8<br>E-bikes Available: 3</div>`)[0];
+                popup_377fdba20d6fc93d1bab75f8d9604660.setContent(html_a5b11b2927b20f8b14941c6cd32a1386);
+            
+        
+
+        marker_ca125503d6d4d7d1371a0d899863d833.bindPopup(popup_377fdba20d6fc93d1bab75f8d9604660)
+        ;
+
+        
+    
+    
+            var marker_a20ca4c0e403d779076e2b4874bb1777 = L.marker(
+                [48.830981659316855, 2.3481646925210953],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_02807134b150fb9f61a3446239a84508 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52010bebbc0e1386ae2e02f4cac25fc8 = $(`<div id="html_52010bebbc0e1386ae2e02f4cac25fc8" style="width: 100.0%; height: 100.0%;"><b>Croulebarde - Corvisart</b><br>Capacity: 34<br>Bikes Available: 6<br>E-bikes Available: 2</div>`)[0];
+                popup_02807134b150fb9f61a3446239a84508.setContent(html_52010bebbc0e1386ae2e02f4cac25fc8);
+            
+        
+
+        marker_a20ca4c0e403d779076e2b4874bb1777.bindPopup(popup_02807134b150fb9f61a3446239a84508)
+        ;
+
+        
+    
+    
+            var marker_7fc601a415e5f0d857d16399ce8c5078 = L.marker(
+                [48.768482147086, 2.4711590635627],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_06d602267392888dc193d0fa192d1fa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bc7c8fa65c38427d65a383d169f95d1 = $(`<div id="html_4bc7c8fa65c38427d65a383d169f95d1" style="width: 100.0%; height: 100.0%;"><b>Sarrazins - Saussure</b><br>Capacity: 1<br>Bikes Available: 0<br>E-bikes Available: 0</div>`)[0];
+                popup_06d602267392888dc193d0fa192d1fa2.setContent(html_4bc7c8fa65c38427d65a383d169f95d1);
+            
+        
+
+        marker_7fc601a415e5f0d857d16399ce8c5078.bindPopup(popup_06d602267392888dc193d0fa192d1fa2)
+        ;
+
+        
+    
+    
+            var marker_b94cd2a1d3d3569886f041ce9d46aff6 = L.marker(
+                [48.870828911558, 2.3459213599563],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_2b883670ef0c555033f321acb10e89a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4856aae12d4f928a4014dba361035d2e = $(`<div id="html_4856aae12d4f928a4014dba361035d2e" style="width: 100.0%; height: 100.0%;"><b>Saint-Fiacre - Poissonière</b><br>Capacity: 35<br>Bikes Available: 27<br>E-bikes Available: 13</div>`)[0];
+                popup_2b883670ef0c555033f321acb10e89a7.setContent(html_4856aae12d4f928a4014dba361035d2e);
+            
+        
+
+        marker_b94cd2a1d3d3569886f041ce9d46aff6.bindPopup(popup_2b883670ef0c555033f321acb10e89a7)
+        ;
+
+        
+    
+    
+            var marker_bbbbc87c56f2f8fd683028c480999331 = L.marker(
+                [48.89792240854517, 2.32851451022192],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_41ad4cc2c2fa37d1e3f653387ca1bdb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a9460426208e7fe79c1020282267305 = $(`<div id="html_8a9460426208e7fe79c1020282267305" style="width: 100.0%; height: 100.0%;"><b>Porte de Saint-Ouen - Bessières</b><br>Capacity: 42<br>Bikes Available: 3<br>E-bikes Available: 1</div>`)[0];
+                popup_41ad4cc2c2fa37d1e3f653387ca1bdb9.setContent(html_8a9460426208e7fe79c1020282267305);
+            
+        
+
+        marker_bbbbc87c56f2f8fd683028c480999331.bindPopup(popup_41ad4cc2c2fa37d1e3f653387ca1bdb9)
+        ;
+
+        
+    
+    
+            var marker_eb0635ab09ba68f81a2e3a14e286d260 = L.marker(
+                [48.879406604954, 2.3034455627202988],
+                {}
+            ).addTo(map_4bc7e4384a9ae7551c36bd2296d23660);
+        
+    
+        var popup_f3a563e1a88f9e7cfc5310ffd7803285 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1e35e08cae7b2abc48f8c72f876790e = $(`<div id="html_c1e35e08cae7b2abc48f8c72f876790e" style="width: 100.0%; height: 100.0%;"><b>Chazelles - Courcelles</b><br>Capacity: 35<br>Bikes Available: 4<br>E-bikes Available: 2</div>`)[0];
+                popup_f3a563e1a88f9e7cfc5310ffd7803285.setContent(html_c1e35e08cae7b2abc48f8c72f876790e);
+            
+        
+
+        marker_eb0635ab09ba68f81a2e3a14e286d260.bindPopup(popup_f3a563e1a88f9e7cfc5310ffd7803285)
+        ;
+
+        
+    
+</script>
+</html>
