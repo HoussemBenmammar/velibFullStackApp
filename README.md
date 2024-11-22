@@ -8,7 +8,7 @@ Ce projet est une application Python qui explore plusieurs fonctionnalités de m
 
 Ce projet est divisé en plusieurs étapes mettant en œuvre des technologies courantes dans le développement Python. Il vous permettra de :
 
-- Gérer une base de données SQLite.
+- Gérer une base de données MONGO.
 - Interagir avec une API externe pour récupérer et afficher des données.
 - Afficher des résultats dans une interface utilisateur simple grâce à Flask et des fichiers HTML.
 
@@ -20,9 +20,9 @@ Chaque script du projet est conçu pour remplir une tâche spécifique et est li
 
 ### 1️⃣ Insertion de données dans une base de données (tp1_inserer_date.py)
 
-- **But** : Ajouter des données utilisateur dans une base SQLite locale.
+- **But** : Ajouter des données utilisateur dans une base mongo locale.
 - **Description** :
-  - Utilise SQLite pour créer ou insérer des données dans une table.
+  - Utilise Mongo pour créer ou insérer des données dans une table.
   - Vérifie et nettoie les entrées avant de les insérer dans la base.
 
 ---
@@ -40,7 +40,7 @@ Chaque script du projet est conçu pour remplir une tâche spécifique et est li
 
 - **But** : Lire et afficher des données stockées localement.
 - **Description** :
-  - Effectue des requêtes SQL pour récupérer des données à partir d'une base existante.
+  - Effectue des requêtes mongo pour récupérer des données à partir d'une base existante.
   - Affiche les résultats de manière organisée.
 
 ---
@@ -56,7 +56,13 @@ Chaque script du projet est conçu pour remplir une tâche spécifique et est li
 
 ## Structure du Projet 📂
 
-tp4/ ├── templates/ │ ├── index.html # Page d'accueil de l'application │ ├── results.html # Page d'affichage des résultats ├── Api.py # Script principal pour gérer l'API et le serveur ├── tp1_inserer_date.py # Script pour insérer des données dans une base de données ├── tp2_display_from_api.py # Script pour afficher des données récupérées via une API ├── tp3_display_from_bd.py # Script pour afficher des données depuis une base de données
+├── tp1_inserer_date.py # Script pour insérer des données dans une base de données
+├── tp2_display_from_api.py # Script pour afficher des données récupérées via une API
+├── tp3_display_from_bd.py # Script pour afficher des données depuis une base de données
+tp4/ ├── templates/ │
+  ├── index.html # Page d'accueil de l'application │
+  ├── results.html # Page d'affichage des résultats
+  ├── Api.py # Script principal pour gérer l'API et le serveur
 
 ---
 
@@ -67,7 +73,7 @@ Avant d'exécuter ce projet, vous devez installer et configurer les éléments s
 - **Python 3.7+**
 - **Bibliothèques Python nécessaires** :
   - Flask
-  - SQLite (intégré avec Python)
+  - Mongo (intégré avec Python)
   - Requests (pour les appels API)
 
 ---
@@ -101,7 +107,7 @@ Ouvrez votre navigateur et accédez à l'application via l'URL suivante : http:/
 
 Python : Langage de programmation principal.
 Flask : Utilisé pour créer le serveur backend et gérer les routes.
-SQLite : Base de données locale pour stocker et récupérer les données.
+Mongo : Base de données locale pour stocker et récupérer les données.
 HTML/CSS : Pour construire une interface utilisateur simple.
 
 ## Améliorations possibles 🔧
