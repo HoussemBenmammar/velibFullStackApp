@@ -56,13 +56,24 @@ Chaque script du projet est conçu pour remplir une tâche spécifique et est li
 
 ## Structure du Projet 📂
 
-**tp1_inserer_date.py** Script pour insérer des données dans une base de données
-**tp2_display_from_api.py** Script pour afficher des données récupérées via une API
-**tp3_display_from_bd.py** Script pour afficher des données depuis une base de données
-**tp4/templates/**
-**index.** Page d'accueil de l'application │
-**results.html** Page d'affichage des résultats
-**Api.py** Script principal pour gérer l'API et le serveur
+**tp1_inserer_date.py**  
+Script pour insérer des données dans une base de données
+
+**tp2_display_from_api.py**  
+Script pour afficher des données récupérées via une API
+
+**tp3_display_from_bd.py**  
+Script pour afficher des données depuis une base de données
+
+**tp4/templates/**  
+**index.html**  
+Page d'accueil de l'application
+
+**results.html**  
+Page d'affichage des résultats
+
+**Api.py**  
+Script principal pour gérer l'API et le serveur
 
 ---
 
